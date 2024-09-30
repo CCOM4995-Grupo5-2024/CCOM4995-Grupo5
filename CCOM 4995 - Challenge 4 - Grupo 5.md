@@ -1,4 +1,8 @@
-Carlos Aparicio Mestra                                                                                              CCOM 4995
-Ian M. Pérez López                                                                                 Desarrollo de Vídeo Juegos
-Ramón Miranda-Calderón                                                                                                Grupo 5
-                                                  Challenge 4: Bullet Time
+Carlos Aparicio Mestra  
+Ian M. Pérez López  
+Ramón Miranda-Calderón  
+
+CCOM 4995: Desarrollo de Vídeo Juegos
+Grupo 5
+
+Challenge 4: Bullet Time

@@ -56,10 +56,36 @@ Para configurar el prefab de la bala:
  <img width="362" alt="Screenshot 2024-10-04 at 12 33 24 PM" src="https://github.com/user-attachments/assets/02470f80-b976-45c5-9a9d-87b5b1f409a2"><img width="831" alt="Screenshot 2024-10-04 at 12 33 46 PM" src="https://github.com/user-attachments/assets/77aa3aaa-2163-4c40-b275-59c05882f371">
 <img width="567" alt="Screenshot 2024-10-04 at 12 34 10 PM" src="https://github.com/user-attachments/assets/c5200997-6f3f-4a4e-b184-6871172f7f8d">
 
+# creción del script grafico del Robot
+
+
+## script  grafico completo
+<img width="1084" alt="Screenshot 2024-10-04 at 5 58 10 PM" src="https://github.com/user-attachments/assets/ee1f83ad-41c5-4561-ba21-10e58e4d9718">
+
+Se puede visualizar el script gráfico completo, al cual le añadimos una nueva animación para mejorar la fluidez del movimiento del personaje. Específicamente, hemos incorporado animaciones para correr, moverse lentamente hacia adelante, atrás, a la derecha y a la izquierda. Además, hemos ocultado el cursor en el modo de juego.
+
+## creación del script grafico 
+
+<img width="1062" alt="Screenshot 2024-10-03 at 6 40 45 PM" src="https://github.com/user-attachments/assets/fbc38c92-3e1a-40cd-8f97-4c6ae9322cd3">
+
+<img width="1051" alt="Screenshot 2024-10-03 at 6 41 01 PM" src="https://github.com/user-attachments/assets/84f8a9f4-d289-48a9-9dec-a368900629ee">
+
+<img width="746" alt="Screenshot 2024-10-03 at 6 41 09 PM" src="https://github.com/user-attachments/assets/0ef29eb2-1473-48df-9f9c-980c1246214c">
+
+<img width="879" alt="Screenshot 2024-10-03 at 6 41 17 PM" src="https://github.com/user-attachments/assets/f7d6d9da-dcc9-4120-a807-77afaa62d808">
+
+<img width="861" alt="Screenshot 2024-10-03 at 6 41 22 PM" src="https://github.com/user-attachments/assets/2aaca980-d847-4168-a911-d4e2169c6837">
+
+<img width="980" alt="Screenshot 2024-10-03 at 6 41 40 PM" src="https://github.com/user-attachments/assets/510819b7-6808-4405-9ae2-f30b12f0785c">
+
+<img width="923" alt="Screenshot 2024-10-03 at 6 41 51 PM" src="https://github.com/user-attachments/assets/fd8b67f7-ad11-42bf-a8ed-fdc24f88d8da">
+
+# jugador con el script grafico asignado
+
+https://github.com/user-attachments/assets/b0550fb8-205f-4be2-adc4-4dd1f1ab4e09
 
 
 
 
- 
 
 

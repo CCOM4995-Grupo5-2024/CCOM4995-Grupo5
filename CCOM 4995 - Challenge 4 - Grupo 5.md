@@ -9,7 +9,7 @@ Grupo 5
   Mover al personaje y poder implementar el efecto de disparar. 
   Se creo un prefab que funciona como bala y el personaje fue descargado del asset store.
 
-# Player Shooting script
+# Player Shooting
 
   Se creó un objeto vacío llamado 'shootPoint' que funciona para poder darle una posicion inicial a la bala.
   En este caso lo colocamos dentro de la jerarquía del personaje ya que es él el que dispara la bala.

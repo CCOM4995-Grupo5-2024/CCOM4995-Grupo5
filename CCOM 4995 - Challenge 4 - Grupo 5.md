@@ -12,23 +12,24 @@ Grupo 5
 # Character Rotation
 
 ## Código
-En la implementación en C#, definimos una variable pública de tipo float llamada **speedRotation** que determina qué tan rápido     girará el personaje. Después de manejar la lógica de movimiento, capturamos el movimiento en el eje X desde la entrada del ratón y   lo aplicamos a la rotación en el eje Y del personaje. Esto permite que el personaje gire en respuesta al movimiento del ratón,     mejorando nuestro control sobre la orientación del personaje en el mundo del juego.
+En la implementación en C#, definimos una variable pública de tipo “float” llamada “speedRotation” que determina qué tan rápido girará el personaje. Después de manejar la lógica de movimiento, capturamos el movimiento en el eje X desde la entrada del “mouse” y lo aplicamos a la rotación en el eje Y del personaje. Esto permite que el personaje gire en respuesta al movimiento del “mouse”, mejorando nuestro control sobre la orientación del personaje en el mundo del juego.
 
 ![image](https://github.com/user-attachments/assets/ade2ba08-d8e4-4b94-86a9-5b976a0b7b03)
 
 ## Gráfica
-En la implementación en la gráfica, creamos una variable de tipo float llamada **speedRotation** y le asignamos un valor. Luego, traducimos las instrucciones de C# en nodos gráficos, lo que implica usar nodos para manipular la rotación del personaje basándonos en la entrada del ratón. Esta configuración permite una representación visual de la lógica, donde los nodos gráficos manejan la rotación de manera similar al código en C#, asegurando que el personaje responda a nuestra entrada.
+En la implementación en la gráfica, creamos una variable de tipo “float” llamada “speedRotation” y le asignamos un valor. Luego, tradujimos las instrucciones de C# en nodos gráficos, lo que implica usar nodos para manipular la rotación del personaje basándonos en la entrada del “mouse”. Esta configuración permite una representación visual de la lógica, donde los nodos gráficos manejan la rotación de manera similar al código en C#, asegurando que el personaje responda a nuestra entrada.
 
 ![image](https://github.com/user-attachments/assets/d95a8894-1a16-436a-a84a-2362874dfda2)
 
-## Bullet Prefab
+# “Bullet Prefab”
 
-Para configurar el prefab de la bala:
+## Para configurar el “prefab” de la bala:
 
-1. Hacemos clic en el prefab de la bala y añadimos un script llamado `forwardMovement`.
-2. En el script `forwardMovement`, creamos una variable pública de tipo float llamada `speed` e implementamos la lógica de movimiento para que la bala avance hacia adelante a lo largo del eje Z.
-3. En Unity, configuramos la velocidad de la bala en 20 y nos aseguramos de que el script esté habilitado.
-4. Creamos un GameObject vacío llamado `shootPoint` y lo posicionamos donde queremos que la bala sea disparada.
+1.	Presionamos el botón del “prefab” de la bala y añadimos un “script” llamado “forwardMovement”.
+2.	En el “script” “forwardMovement”, creamos una variable pública de tipo “float” llamada “speed” e implementamos la lógica de movimiento para que la bala avance hacia adelante a lo largo del eje Z.
+3.	En “Unity”, configuramos la velocidad de la bala en 20 y nos aseguramos de que el “script” esté habilitado.
+4.	Creamos un “GameObject” vacío llamado “shootPoint” y lo posicionamos donde queremos que la bala sea disparada.
+
 
 ![image](https://github.com/user-attachments/assets/661e05eb-0079-4cb8-aaf8-a5b46ae8cb96)
 

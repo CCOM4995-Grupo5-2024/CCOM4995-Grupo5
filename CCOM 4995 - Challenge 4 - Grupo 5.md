@@ -16,7 +16,7 @@ Grupo 5
 ## Código
 En la implementación en C#, definimos una variable pública de tipo “float” llamada “speedRotation” que determina qué tan rápido girará el personaje. Después de manejar la lógica de movimiento, capturamos el movimiento en el eje X desde la entrada del “mouse” y lo aplicamos a la rotación en el eje Y del personaje. Esto permite que el personaje gire en respuesta al movimiento del “mouse”, mejorando nuestro control sobre la orientación del personaje en el mundo del juego.
 
-![image](https://github.com/user-attachments/assets/ade2ba08-d8e4-4b94-86a9-5b976a0b7b03)
+<img width="553" alt="Screenshot" src="https://github.com/user-attachments/assets/e1effd98-49d3-40e1-a31c-83c630a868fb">
 
 ## Gráfica
 En la implementación en la gráfica, creamos una variable de tipo “float” llamada “speedRotation” y le asignamos un valor. Luego, tradujimos las instrucciones de C# en nodos gráficos, lo que implica usar nodos para manipular la rotación del personaje basándonos en la entrada del “mouse”. Esta configuración permite una representación visual de la lógica, donde los nodos gráficos manejan la rotación de manera similar al código en C#, asegurando que el personaje responda a nuestra entrada.

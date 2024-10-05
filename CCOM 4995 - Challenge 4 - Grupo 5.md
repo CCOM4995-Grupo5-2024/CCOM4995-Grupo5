@@ -6,8 +6,8 @@ Grupo 5
 
 
 # Challenge 4: Bullet Time
-  En este “challenge” implementamos “scripts” y “visual graphs” en nuestro proyecto que nos permiten: 
-  Mover al personaje y poder implementar el efecto de disparar. 
+  En este “challenge” implementamos “scripts” y gráficas en nuestro proyecto que nos permiten: 
+  mover al personaje y poder implementar el efecto de disparar. 
   Se creó un “prefab” que funciona como bala y el personaje fue descargado del “asset store”.
 
 

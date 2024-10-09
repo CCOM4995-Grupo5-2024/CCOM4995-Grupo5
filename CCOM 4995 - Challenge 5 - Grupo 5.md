@@ -45,9 +45,13 @@ En este ejercicio, practicamos cómo usar el nuevo Sistema de Entrada de Unity p
 
 # Script Graph
 
+## Horizontal and Vertical Movement
 
+![gif3](https://github.com/user-attachments/assets/5a90e003-58d2-4a19-8cfe-8de66f78156b)
 
+## Shoot 
 
+![gif4](https://github.com/user-attachments/assets/e13a4977-1939-4ac3-9a3e-f267f995be64)
 
 
 

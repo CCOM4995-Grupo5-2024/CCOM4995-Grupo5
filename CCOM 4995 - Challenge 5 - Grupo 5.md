@@ -39,6 +39,24 @@ Se han definido varias acciones para controlar al jugador en Unity. Al presionar
 
 ## Visual Graph
 
+### Horizontal Move
+Se usa un nodo, 'On Input System Event Float' asignado a HorizontalMove, del nuevo input system que lee el valor en x cuando se oprimen las llaves A y D. Este nodo devuelve el valor en el eje x. Se inicializa la variable movementValue con el output del nodo inicial 'On Input System Event Float'. movementValue se multiplica por la variable speed. El resultado se ingresa en el un nodo nuevo que traslada el la posicion del valor x del personaje. Permite al jugador moverse de hacia los lados
+
+### Vertical Move 
+Basicamente es la misma serie de nodos que en Horizontal Move pero el resultado de la multiplicación es ingresado en la posición del valor z en el nodo que traslada al personaje. Y el nodo inicial es 'On Input System Event Float' asignado a VerticalMove. Permite al jugador moverse hacia alfrente y atrás.
+
+### Run
+Se usa un nodo, 'On Input System Event Button' asignado a Run, del nuevo input system que detecta cuando se oprime la llave: Shift. Si se oprime shift, se inicializa variable isRunning que detecta si el personaje corre. Luego de un nodo condicional, se asigna el valor de runSpeed a la variable aumentoVelocidad mediante un nodo de tipo Set Variable. Luedo se inicializa la variable currentSpeed con el resultado de la multiplicación entre speed y aumentoVelocidad. currenApeed es ingresado al nodo que traslada la posición al valor z del personaje. Permite correr
+
+### Look
+Se usa un nodo, 'On Input System Event Vector2' asignado a Look que lee el valor de Vector2. Se usa un nodo para obtener el valor de x en el Vector2. Ese valor es multiplicado por la variable rotationSpeed y ese resultado es asignado a la variable lookValue. El valor de look value es assignado a la posicón y del nodo 'Transform Rotate'. Permite rotar la pantalla con el movimiento del mouse.
+
+### Fire
+Se usa un nodo, 'On Input System Event Button' asignado a Fire que lee el 'left click' del mouse o 'touch pad' cada vez que se haga 'Left Click'. Cuando esto ocurre, se crea una instancia del prefab Bullet. Permite que el jugador dispare balas.
+
+### Jump
+Se usa un nodo, 'On Input System Event Button' asignado a Jump. Este nodo conecta a un nodo condicional que si determina que el jugador está en el piso (isGrounded) se conecta a otro nodo de tipo 'rigid body: Add Force' que hace mover al personaje imitando el efecto de brincar cuando recibe el valor de upForce en la posición y. Cuando de aplica esta fuerza, la variable isGrounded toma valor falso. Para determinar si el personaje esta en el piso, se toma la variable de rb y se asigna a un nodo 'On collision enter', resultado de ese nodo se compara (en un nodo de comparación) con el literal "Ground". Entonces la variable isGrounded toma un valor cierto. Permite al jugador brincar.
+
 <img width="1029" alt="vg1" src="https://github.com/user-attachments/assets/6c4741f3-059d-477e-a6e4-9a859dcd0968">
 
 <img width="1102" alt="vg2" src="https://github.com/user-attachments/assets/23671453-cd7c-4f21-8672-79fb8f880621">

@@ -65,17 +65,20 @@ En este ejercicio, practicamos cómo usar el nuevo Sistema de Entrada de Unity p
 ## Awake, Horizontal and Vertical Movement
 
 <img width="1029" alt="vg1" src="https://github.com/user-attachments/assets/6c4741f3-059d-477e-a6e4-9a859dcd0968">
+
 ![Awakeymove gif](https://github.com/user-attachments/assets/190f5151-c64d-4820-8bd0-44a740603802)
 
 
 ## Jump and Run
 
 <img width="1102" alt="vg2" src="https://github.com/user-attachments/assets/23671453-cd7c-4f21-8672-79fb8f880621">
+
 ![Jumpyrun-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/d2029dea-59f4-4b9a-ba38-3966c730767a)
 
 ## Look and Fire
 
 <img width="1054" alt="vg3" src="https://github.com/user-attachments/assets/dc141b4d-cc89-4e9a-b415-adf612b3051b">
+
 ![lookyfire-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/adf639b5-a052-4854-84be-d38a30584466)
 
 ## Execution of Visual Graph

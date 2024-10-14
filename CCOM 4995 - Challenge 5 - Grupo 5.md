@@ -62,27 +62,30 @@ En este ejercicio, practicamos cómo usar el nuevo Sistema de Entrada de Unity p
 
 <img width="316" alt="Variables VG 3" src="https://github.com/user-attachments/assets/bce41990-2cdc-4550-990c-540306323ae8">
 
-## Awake, Horizontal and Vertical Movement
+## Visual Graph
 
 <img width="1029" alt="vg1" src="https://github.com/user-attachments/assets/6c4741f3-059d-477e-a6e4-9a859dcd0968">
 
-![Awakeymove gif](https://github.com/user-attachments/assets/190f5151-c64d-4820-8bd0-44a740603802)
-
-
-## Jump and Run
-
 <img width="1102" alt="vg2" src="https://github.com/user-attachments/assets/23671453-cd7c-4f21-8672-79fb8f880621">
-
-![Jumpyrun-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/d2029dea-59f4-4b9a-ba38-3966c730767a)
-
-## Look and Fire
 
 <img width="1054" alt="vg3" src="https://github.com/user-attachments/assets/dc141b4d-cc89-4e9a-b415-adf612b3051b">
 
-![lookyfire-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/adf639b5-a052-4854-84be-d38a30584466)
+<img width="1002" alt="vg4" src="https://github.com/user-attachments/assets/541a3333-14e4-4b49-abd6-96430e4a12a8">
 
-## Execution of Visual Graph
+
+
+## In game execution of Visual Graph
 ![PlayerMovementGameplsyVG-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/4da7ac03-de9b-424f-b17c-3805afd84742)
 
+## Execution of nodes in Visual graph
+### Awake and Move's
+![Awakeymove gif](https://github.com/user-attachments/assets/190f5151-c64d-4820-8bd0-44a740603802)
+
+### Jump and run
+![Jumpyrun-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/d2029dea-59f4-4b9a-ba38-3966c730767a)
+
+
+## Look and Fire
+![lookyfire-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/adf639b5-a052-4854-84be-d38a30584466)
 
 

@@ -75,7 +75,8 @@ En este ejercicio, practicamos cómo usar el nuevo Sistema de Entrada de Unity p
 
 
 ## In game execution of Visual Graph
-![PlayerMovementGameplsyVG-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/4da7ac03-de9b-424f-b17c-3805afd84742)
+![PlayerMovementGameplsyVG-ezgif com-optimize](https://github.com/user-attachments/assets/b2d94dc4-8296-46e6-98f9-1d6bee2566c2)
+
 
 ## Execution of nodes in Visual graph
 ### Awake and Move's

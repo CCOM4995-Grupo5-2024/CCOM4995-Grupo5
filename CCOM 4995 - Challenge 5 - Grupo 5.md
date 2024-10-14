@@ -90,3 +90,17 @@ En este ejercicio, practicamos cómo usar el nuevo Sistema de Entrada de Unity p
 ![lookyfire-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/adf639b5-a052-4854-84be-d38a30584466)
 
 
+# creación del script en c#
+
+<img width="1043" alt="Screenshot 2024-10-13 at 11 11 25 PM" src="https://github.com/user-attachments/assets/48ee05e2-66b9-4895-9253-1482d7da2532">
+<img width="850" alt="Screenshot 2024-10-13 at 11 11 43 PM" src="https://github.com/user-attachments/assets/4236dc07-8501-49f5-af0d-346ee143fd53">
+<img width="922" alt="Screenshot 2024-10-13 at 11 11 54 PM" src="https://github.com/user-attachments/assets/a325fa5d-28ed-477b-bb44-16e2b645a48f">
+<img width="1271" alt="Screenshot 2024-10-13 at 11 12 22 PM" src="https://github.com/user-attachments/assets/e550f083-8d25-44db-8fb2-074e69179a7b">
+<img width="1177" alt="Screenshot 2024-10-13 at 11 12 36 PM" src="https://github.com/user-attachments/assets/1679c3bc-6f04-45b1-8bf1-c9887096e25c">
+
+
+El script en C# llamado playerControls controla el movimiento, la rotación, el salto, el sprint, y las acciones de disparo de un personaje en Unity, utilizando el nuevo sistema de Input. Este script ajusta las animaciones del personaje según su estado y maneja su lógica de físicas mediante un Rigidbody. El movimiento horizontal y vertical se controla a través de métodos específicos que modifican las animaciones y las direcciones en las que el personaje se mueve, mientras que la rotación del personaje se ajusta según la entrada del jugador. El script también permite realizar saltos dobles, gestionando un contador de saltos y verificando si el personaje está en el suelo para reiniciar el conteo. La acción de disparo se maneja con una corrutina que permite un disparo continuo mientras el botón está presionado, instanciando un proyectil desde un punto específico. Además, hay un mecanismo de sprint que aumenta la velocidad del personaje cuando se activa. El Update se encarga de actualizar el movimiento del personaje y su rotación en cada cuadro, aplicando las animaciones correspondientes cuando el personaje se encuentra quieto.
+
+
+###script en uso
+![ScreenRecording2024-10-13at11 18 01PM-ezgif com-optimize](https://github.com/user-attachments/assets/7cc57ca9-37d5-42bf-a714-1dbc6b96e00f)

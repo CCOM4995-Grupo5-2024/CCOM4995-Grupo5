@@ -22,13 +22,13 @@ En este ejercicio, practicamos cómo usar el nuevo Sistema de Entrada de Unity p
 | Fast horizontal movement   | Shift + A/D keys, gamepad left stick (press)   |
 | Fast vertical movement     | Shift + W/S keys, gamepad left stick (press)   |
 
-# acciones creadas
+# Acciones Creadas
 
 <img width="875" alt="Screenshot 2024-10-14 at 12 01 58 AM" src="https://github.com/user-attachments/assets/45b99448-e824-4223-9623-07ec8234489a">
 
 Se han definido varias acciones para controlar al jugador en Unity. Al presionar el botón del mouse, el personaje disparará (acción Fire). Para saltar, se utiliza la barra espaciadora (acción Jump). Manteniendo presionada la tecla Shift, el jugador correrá (acción Run). El movimiento horizontal se controla con las teclas A/D o las flechas izquierda/derecha (acción HorizontalMove), mientras que el movimiento vertical se realiza con W/S o las flechas arriba/abajo (acción VerticalMove). Finalmente, al mover el mouse, se ajusta la dirección de la vista del jugador (acción Look). 
 
-# Visual Graph with New Input System
+# Gráfica con Nuevo Input System
 ## Variables
 
 <img width="317" alt="variables VG 1" src="https://github.com/user-attachments/assets/eeba9769-a458-4b54-9917-9b98b971a3e7">
@@ -49,23 +49,23 @@ Se han definido varias acciones para controlar al jugador en Unity. Al presionar
 
 
 
-## In game execution of Visual Graph
+## Ejecución en Video Juego de Visual Graph
 ![PlayerMovementGameplsyVG-ezgif com-optimize](https://github.com/user-attachments/assets/b2d94dc4-8296-46e6-98f9-1d6bee2566c2)
 
 
-## Execution of nodes in Visual graph
-### Awake and Move's
+## Ejecución de Nodos en Visual graph
+### Awake y Mover
 ![Awakeymove gif](https://github.com/user-attachments/assets/190f5151-c64d-4820-8bd0-44a740603802)
 
-### Jump and run
+### Brincar y Correr
 ![Jumpyrun-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/d2029dea-59f4-4b9a-ba38-3966c730767a)
 
 
-## Look and Fire
+## Mirar y Disparar
 ![lookyfire-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/adf639b5-a052-4854-84be-d38a30584466)
 
 
-# creación del script en c#
+# Creación del Script en C#
 
 <img width="1043" alt="Screenshot 2024-10-13 at 11 11 25 PM" src="https://github.com/user-attachments/assets/48ee05e2-66b9-4895-9253-1482d7da2532">
 <img width="850" alt="Screenshot 2024-10-13 at 11 11 43 PM" src="https://github.com/user-attachments/assets/4236dc07-8501-49f5-af0d-346ee143fd53">
@@ -77,5 +77,5 @@ Se han definido varias acciones para controlar al jugador en Unity. Al presionar
 El script en C# llamado playerControls controla el movimiento, la rotación, el salto, el sprint, y las acciones de disparo de un personaje en Unity, utilizando el nuevo sistema de Input. Este script ajusta las animaciones del personaje según su estado y maneja su lógica de físicas mediante un Rigidbody. El movimiento horizontal y vertical se controla a través de métodos específicos que modifican las animaciones y las direcciones en las que el personaje se mueve, mientras que la rotación del personaje se ajusta según la entrada del jugador. El script también permite realizar saltos dobles, gestionando un contador de saltos y verificando si el personaje está en el suelo para reiniciar el conteo. La acción de disparo se maneja con una corrutina que permite un disparo continuo mientras el botón está presionado, instanciando un proyectil desde un punto específico. Además, hay un mecanismo de sprint que aumenta la velocidad del personaje cuando se activa. El Update se encarga de actualizar el movimiento del personaje y su rotación en cada cuadro, aplicando las animaciones correspondientes cuando el personaje se encuentra quieto.
 
 
-### script en uso
+### Script en Uso
 ![ScreenRecording2024-10-13at11 18 01PM-ezgif com-optimize](https://github.com/user-attachments/assets/7cc57ca9-37d5-42bf-a714-1dbc6b96e00f)

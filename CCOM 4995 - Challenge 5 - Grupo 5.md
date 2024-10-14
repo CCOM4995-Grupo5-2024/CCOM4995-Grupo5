@@ -26,6 +26,7 @@ En este ejercicio, practicamos cómo usar el nuevo Sistema de Entrada de Unity p
 
 <img width="875" alt="Screenshot 2024-10-14 at 12 01 58 AM" src="https://github.com/user-attachments/assets/45b99448-e824-4223-9623-07ec8234489a">
 
+Se han definido varias acciones para controlar al jugador en Unity. Al presionar el botón del mouse, el personaje disparará (acción Fire). Para saltar, se utiliza la barra espaciadora (acción Jump). Manteniendo presionada la tecla Shift, el jugador correrá (acción Run). El movimiento horizontal se controla con las teclas A/D o las flechas izquierda/derecha (acción HorizontalMove), mientras que el movimiento vertical se realiza con W/S o las flechas arriba/abajo (acción VerticalMove). Finalmente, al mover el mouse, se ajusta la dirección de la vista del jugador (acción Look). 
 
 # Visual Graph with New Input System
 ## Variables

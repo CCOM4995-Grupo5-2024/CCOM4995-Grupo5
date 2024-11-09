@@ -33,8 +33,7 @@ En este mini-juego, el jugador enfrenta y le dispara a los enemigos. Si el jugad
 ## Enemy Manager
 ![image](https://github.com/user-attachments/assets/6478660e-4281-422f-8411-fd3dceda5f7b)
 
-![image](https://github.com/user-attachments/assets/891171f3-5276-4491-9a93-0d34e46bfa68)
-
+![image](https://github.com/user-attachments/assets/8e2226d5-67aa-4e39-8d4a-e6f20d5e8595)
 
  
 ## Enemies Manager Gif

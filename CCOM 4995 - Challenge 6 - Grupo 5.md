@@ -30,6 +30,12 @@ En este mini-juego, el jugador enfrenta y le dispara a los enemigos. Si el jugad
 ## Spawners
 ![image](https://github.com/user-attachments/assets/c4dfe3c7-e1a7-4bac-8b24-f4fc992acf50)
 
+## Enemy Manager
+![image](https://github.com/user-attachments/assets/6478660e-4281-422f-8411-fd3dceda5f7b)
+
+![image](https://github.com/user-attachments/assets/891171f3-5276-4491-9a93-0d34e46bfa68)
+
+
  
 ## Enemies Manager Gif
 ![ScreenRecording2024-11-08at10 14 31PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/357127d6-b4f9-4cbc-bb98-87cf3066e67b)

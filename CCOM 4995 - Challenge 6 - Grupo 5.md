@@ -1,3 +1,18 @@
+Carlos Aparicio Mestra  
+Ian M. Pérez López  
+Ramón E. Miranda Calderón  
+CCOM 4995: Desarrollo de Vídeo Juegos
+Grupo 5
+
+
+# Challenge 6: Advanced Project (Mini Game Creation)
+
+En este ejercicio, desarrollaremos un juego utilizando clases de mánager para rastrear y controlar varios aspectos del juego, como los estados de los objetos y el progreso del juego. Al centralizar la lógica de administración, una clase de “Game Manager” puede supervisar múltiples elementos y valores del juego, como enemigos, puntajes y estados del juego, mejorando la organización y la eficiencia. 
+
+## Mini Game
+
+En este mini-juego, el jugador enfrenta y le dispara a los enemigos. Si el jugador falla y les da a las paredes, los paneles del piso desaparecen según el tipo de golpe de pared: los golpes de la pared lateral eliminan un solo panel, mientras que los golpes de la pared de la esquina eliminan todos los paneles del piso. El objetivo de los jugadores es destruir tantos enemigos como sea posible antes de que se puedan caer hacia el vacío debajo del nivel.
+
 
 # script de Wall
 

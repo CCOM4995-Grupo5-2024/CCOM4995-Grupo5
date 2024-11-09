@@ -16,14 +16,20 @@ En este mini-juego, el jugador enfrenta y le dispara a los enemigos. Si el jugad
 ## "Stage"
 
 ### "Floors"
+
+Creamos 16 paneles de piso, de un "prefab" con ajuste de "static", que permite al jugador caerse al desaparecer el panel.
 ![image](https://github.com/user-attachments/assets/ae9f8343-5c10-4763-8462-5881a4492395)
 
 ### "Walls"
 
 #### "Corners"
+
+Añadimos cuatro (4) esquinas de un "prefab". 
 ![image](https://github.com/user-attachments/assets/6b473575-4c3e-49b3-8ee3-e288246b8f0d)
 
 #### "Side Walls"
+
+Preparamos cuatro (4) paredes de un "prefab" con siete (7) partes cada una.
 ![image](https://github.com/user-attachments/assets/80f9caf0-fb82-4cda-8f9d-8e45ba811a41)
 
 

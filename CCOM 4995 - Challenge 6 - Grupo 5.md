@@ -12,8 +12,29 @@ En este ejercicio, desarrollaremos un juego utilizando clases de mánager para r
 ## Mini Game
 
 En este mini-juego, el jugador enfrenta y le dispara a los enemigos. Si el jugador falla y les da a las paredes, los paneles del piso desaparecen según el tipo de golpe de pared: los golpes de la pared lateral eliminan un solo panel, mientras que los golpes de la pared de la esquina eliminan todos los paneles del piso. El objetivo de los jugadores es destruir tantos enemigos como sea posible antes de que se puedan caer hacia el vacío debajo del nivel.
+
 ## Enemies Manager Gif
 ![ScreenRecording2024-11-08at10 14 31PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/357127d6-b4f9-4cbc-bb98-87cf3066e67b)
+
+## Waves Manager
+Para poder tener record de cuantos spawners hay activos se creo el wave manager.
+Primero se creo un objeto vacío llamado WaveManager
+
+<img width="324" alt="Screenshot 2024-11-08 at 9 52 39 PM" src="https://github.com/user-attachments/assets/5dcf703f-ff67-434b-a5b1-a405f96ac52e">
+
+### Script
+
+<img width="1262" alt="Screenshot 2024-11-08 at 9 50 04 PM" src="https://github.com/user-attachments/assets/997a87b9-c5f9-4f6d-b937-14fbc5fca71f">
+
+### Waves Manager Gif
+
+![ScreenRecording2024-11-08at10 16 43PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/f572f2a7-b1f7-4afb-b847-42bd36e3a9f7)
+
+## Plano de estadio
+Si el jugador se cae y hace contacto con el plano, se muere
+### Script
+
+<img width="982" alt="Screenshot 2024-11-08 at 9 37 31 PM" src="https://github.com/user-attachments/assets/9efd300d-aca8-4c0f-a374-ecc373048ecf">
 
 # script de Wall
 
@@ -67,26 +88,6 @@ Para tener un record de cuantos puntos tiene le jugador según los enemigos que 
 ### Script Score on Death
 <img width="867" alt="Screenshot 2024-11-08 at 10 02 12 PM" src="https://github.com/user-attachments/assets/efe483d5-71de-4f9d-af9f-0daba0fc940a">
 
-
-
-## Waves Manager
-Para poder tener record de cuantos spawners hay activos se creo el wave manager.
-Primero se creo un objeto vacío llamado WaveManager
-
-<img width="324" alt="Screenshot 2024-11-08 at 9 52 39 PM" src="https://github.com/user-attachments/assets/5dcf703f-ff67-434b-a5b1-a405f96ac52e">
-
-### Script
-
-<img width="1262" alt="Screenshot 2024-11-08 at 9 50 04 PM" src="https://github.com/user-attachments/assets/997a87b9-c5f9-4f6d-b937-14fbc5fca71f">
-
-### Waves Manager Gif
-![ScreenRecording2024-11-08at10 16 43PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/f572f2a7-b1f7-4afb-b847-42bd36e3a9f7)
-
-## Plano de estadio
-Si el jugador se cae y hace contacto con el plano, se muere
-### Script
-
-<img width="982" alt="Screenshot 2024-11-08 at 9 37 31 PM" src="https://github.com/user-attachments/assets/9efd300d-aca8-4c0f-a374-ecc373048ecf">
 
 ## Lluvia
 Luego de coordinar los scripts para que se eliminara el piso cuando una bala haga contacto con la pared, incorporamos lluvia al juego para incrementar la dificultad del juego.

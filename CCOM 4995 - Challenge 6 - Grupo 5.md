@@ -107,7 +107,7 @@ El "script FloorManager" se asigna a un objeto vacío, donde se gestionarán y v
 
 ## Eliminación de "floor gif"
 
-Se elimina uno de los 16 pisos cuando la bala hace contacto con una pared regular. Se elimiaan todos los pisos cuando la bala choca con una esquina.
+Se elimina uno de los 16 pisos cuando la bala hace contacto con una pared regular. Se eliminan todos los pisos cuando la bala choca con una esquina.
 
 ![Floors-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/9c1c61c6-305e-475f-89d2-5c8d027d5f63)
 
@@ -127,11 +127,11 @@ Para tener un registro de cuántos puntos tiene el jugador, según los enemigos 
 
 ## Lluvia
 
-Luego de coordinar los "scripts" para que se eliminara el piso cuando una bala haga contacto con la pared, incorporamos lluvia al juego para incrementar la dificultad del mismo.
+Luego de coordinar los "scripts" para que se eliminara el piso cuando una bala haga contacto con la pared, incorporamos lluvia al juego para incrementar la dificultad de este.
 
 ### Prefab
 
-Se escogió una esfera como el objeto para representar las gotas de lluvia con un tamaño un poco mayor que la bala del jugador. También se creó un material azul fosforecente para que la gota se vea claramente.
+Se escogió una esfera como el objeto para representar las gotas de lluvia con un tamaño un poco mayor que la bala del jugador. También se creó un material azul fosforescente para que la gota se vea claramente.
 
 <img width="1177" alt="Screenshot 2024-11-08 at 6 27 52 PM" src="https://github.com/user-attachments/assets/5d2aa8af-839f-4e28-b03d-e96fa0a20492">
 
@@ -144,14 +144,14 @@ Para poder generar lluvia en el juego se modificó el "script" de 'Spawner' de l
 
 <img width="1114" alt="Screenshot 2024-11-08 at 7 39 53 PM" src="https://github.com/user-attachments/assets/dc33f5b2-2bdc-44b6-9fad-60e304248e00">
 
-Para que el objeto de gota de lluvia cumpla con las coaliciones respectivas(que la gota no afecte al enemigo, pero el enemigo sí a la gota; que la gota haga efecto sobre el jugador y el jugador sobre la gota; y finalmente que la lluvia no afecte la trayectoria de las balas) se modificó la matriz de coaliciones en "project settings -> Physics", para permitir que la lluvia no tenga efecto sobre la trayectoria del enemigo.
+Para que el objeto de gota de lluvia cumpla con las coaliciones respectivas (que la gota no afecte al enemigo, pero el enemigo sí a la gota; que la gota haga efecto sobre el jugador y el jugador sobre la gota; y finalmente que la lluvia no afecte la trayectoria de las balas) se modificó la matriz de coaliciones en "project settings -> Physics", para permitir que la lluvia no tenga efecto sobre la trayectoria del enemigo.
 
 <img width="328" alt="Screenshot 2024-11-08 at 8 00 51 PM" src="https://github.com/user-attachments/assets/9818830c-756d-485f-bd6c-584567282a29">
 <img width="355" alt="Screenshot 2024-11-08 at 8 02 15 PM" src="https://github.com/user-attachments/assets/f99726a8-5204-4020-909c-298cca95ca3d">
 
 ### "Rain Manager"
 
-Se creó este "rain manager" para tener cuenta de cuántos gotas de lluvia hay en la escena
+Se creó este "rain manager" para tener cuenta de cuántas gotas de lluvia hay en la escena
 <img width="743" alt="Screenshot 2024-11-08 at 8 50 35 PM" src="https://github.com/user-attachments/assets/da9b79cd-19bc-43e5-887c-b342b7cc7877">
 
 ### "Script" de Lluvia y "AutoDestroy" en el "prefab" de Gotas de Lluvia
@@ -165,7 +165,7 @@ Se creó este "rain manager" para tener cuenta de cuántos gotas de lluvia hay e
 
 ## "GameMode"
 
-Se inicializó un objeto vacío llamado "GameMode" para poder manejar las condiciones de ganar y perder del juego. Para que el jugador pierda su vida tiene que llegar a 0 y para que gane, el jugador debe de eliminar todos los enemigos y no deben quedar rondas(waves) de enemigos. Para poder llevar a cabo esto, se creó un "script" con las condiciones de ganar y perder.
+Se inicializó un objeto vacío llamado "GameMode" para poder manejar las condiciones de ganar y perder del juego. Para que el jugador pierda su vida tiene que llegar a 0 y para que gane, el jugador debe de eliminar todos los enemigos y no deben quedar rondas (waves) de enemigos. Para poder llevar a cabo esto, se creó un "script" con las condiciones de ganar y perder.
 
 <img width="325" alt="Screenshot 2024-11-08 at 9 00 43 PM" src="https://github.com/user-attachments/assets/cdc39269-01e1-4ef3-b394-1e61164a9b75">
 
@@ -177,14 +177,15 @@ Se inicializó un objeto vacío llamado "GameMode" para poder manejar las condic
 
 Cuando el jugador cae al plano, su vida va a 0 y por lo tanto muere.
 
-![loseGame](https://github.com/user-attachments/assets/280bfb90-7342-4103-94ff-942323874111)
+![loseGame](https://github.com/user-attachments/assets/1f442358-50a0-4e2a-a9b0-d0136a7eeff3)
+
 
 
 ### Condición de Ganar
 
 Cuando se elimina al último enemigo y no quedan más "waves" de enemigos
 
-![winGame](https://github.com/user-attachments/assets/70c56259-74dd-4fd7-b6de-a8d4512ac92b)
+![winGame](https://github.com/user-attachments/assets/35dcb638-7e65-44f3-b189-7f38626902c7)
 
 
 

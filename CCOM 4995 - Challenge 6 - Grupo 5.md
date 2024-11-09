@@ -18,6 +18,7 @@ En este mini-juego, el jugador enfrenta y le dispara a los enemigos. Si el jugad
 ### "Floors"
 
 Creamos 16 paneles de piso, de un "prefab" con ajuste de "static", que permite al jugador caerse al desaparecer el panel.
+
 ![image](https://github.com/user-attachments/assets/ae9f8343-5c10-4763-8462-5881a4492395)
 
 ### "Walls"
@@ -25,18 +26,22 @@ Creamos 16 paneles de piso, de un "prefab" con ajuste de "static", que permite a
 #### "Corners"
 
 Añadimos cuatro (4) esquinas de un "prefab". 
+
 ![image](https://github.com/user-attachments/assets/6b473575-4c3e-49b3-8ee3-e288246b8f0d)
 
 #### "Side Walls"
 
 Preparamos cuatro (4) paredes de un "prefab" con siete (7) partes cada una.
+
 ![image](https://github.com/user-attachments/assets/80f9caf0-fb82-4cda-8f9d-8e45ba811a41)
 
 
 ## "Spawners"
+
 ![image](https://github.com/user-attachments/assets/c4dfe3c7-e1a7-4bac-8b24-f4fc992acf50)
 
 ## "Enemy Manager"
+
 ![image](https://github.com/user-attachments/assets/6478660e-4281-422f-8411-fd3dceda5f7b)
 
 ![image](https://github.com/user-attachments/assets/8e2226d5-67aa-4e39-8d4a-e6f20d5e8595)
@@ -101,12 +106,14 @@ El "script FloorManager" se asigna a un objeto vacío, donde se gestionarán y v
 <img width="1440" alt="Screenshot 2024-11-08 at 7 28 45 PM" src="https://github.com/user-attachments/assets/b8d69b79-97d9-40c2-9fa4-0bf1f0133ed8">
 
 ## Eliminación de "floor gif"
+
 Se elimina uno de los 16 pisos cuando la bala hace contacto con una pared regular. Se elimiaan todos los pisos cuando la bala choca con una esquina.
 
 ![Floors-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/9c1c61c6-305e-475f-89d2-5c8d027d5f63)
 
 
 ## "Score Manager"
+
 Para tener un registro de cuántos puntos tiene el jugador, según los enemigos que mata, se creó un "Score Manager".
 
 <img width="328" alt="Screenshot 2024-11-08 at 9 55 22 PM" src="https://github.com/user-attachments/assets/83a7cc5e-bf45-41b1-976c-92e3d5029fa4">
@@ -119,14 +126,18 @@ Para tener un registro de cuántos puntos tiene el jugador, según los enemigos 
 
 
 ## Lluvia
+
 Luego de coordinar los "scripts" para que se eliminara el piso cuando una bala haga contacto con la pared, incorporamos lluvia al juego para incrementar la dificultad del mismo.
+
 ### Prefab
+
 Se escogió una esfera como el objeto para representar las gotas de lluvia con un tamaño un poco mayor que la bala del jugador. También se creó un material azul fosforecente para que la gota se vea claramente.
 
 <img width="1177" alt="Screenshot 2024-11-08 at 6 27 52 PM" src="https://github.com/user-attachments/assets/5d2aa8af-839f-4e28-b03d-e96fa0a20492">
 
 
 ### "RainSpawners"
+
 Para poder generar lluvia en el juego se modificó el "script" de 'Spawner' de los enemigos para que genere muchas gotas de lluvias en el minijuego. Se creó un objeto vacío llamado 'RainSpawner' y se le agregó un "script" con el mismo nombre.
 
 <img width="1305" alt="Screenshot 2024-11-08 at 7 21 49 PM" src="https://github.com/user-attachments/assets/4bbd7781-af16-4dc6-8c9f-09c4273e4c35">
@@ -139,17 +150,21 @@ Para que el objeto de gota de lluvia cumpla con las coaliciones respectivas(que 
 <img width="355" alt="Screenshot 2024-11-08 at 8 02 15 PM" src="https://github.com/user-attachments/assets/f99726a8-5204-4020-909c-298cca95ca3d">
 
 ### "Rain Manager"
+
 Se creó este "rain manager" para tener cuenta de cuántos gotas de lluvia hay en la escena
 <img width="743" alt="Screenshot 2024-11-08 at 8 50 35 PM" src="https://github.com/user-attachments/assets/da9b79cd-19bc-43e5-887c-b342b7cc7877">
 
 ### "Script" de Lluvia y "AutoDestroy" en el "prefab" de Gotas de Lluvia
+
 <img width="1089" alt="Screenshot 2024-11-08 at 8 51 13 PM" src="https://github.com/user-attachments/assets/669dd488-8367-42cb-9139-f0355a5d5ea3">
 <img width="566" alt="Screenshot 2024-11-08 at 8 52 12 PM" src="https://github.com/user-attachments/assets/3ab994b7-7e43-49f9-b8ea-7abfc3e67e38">
 
 ### Efecto de Lluvia
+
 ![ScreenRecording2024-11-08at8 23 42PM-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/09cebc6a-ea33-4ff5-a8c1-ecd1c706caa7)
 
 ## "GameMode"
+
 Se inicializó un objeto vacío llamado "GameMode" para poder manejar las condiciones de ganar y perder del juego. Para que el jugador pierda su vida tiene que llegar a 0 y para que gane, el jugador debe de eliminar todos los enemigos y no deben quedar rondas(waves) de enemigos. Para poder llevar a cabo esto, se creó un "script" con las condiciones de ganar y perder.
 
 <img width="325" alt="Screenshot 2024-11-08 at 9 00 43 PM" src="https://github.com/user-attachments/assets/cdc39269-01e1-4ef3-b394-1e61164a9b75">
@@ -159,12 +174,17 @@ Se inicializó un objeto vacío llamado "GameMode" para poder manejar las condic
 <img width="1259" alt="Screenshot 2024-11-08 at 9 26 34 PM" src="https://github.com/user-attachments/assets/1b23cc30-a809-4bc1-a497-f43ec58921df">
 
 ### Condición de Pérdida
+
 Cuando el jugador cae al plano, su vida va a 0 y por lo tanto muere.
-![ScreenRecording2024-11-08at8 37 35PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/a473f637-56a1-4e0c-9b5c-dd05949eab60)
+
+![loseGame](https://github.com/user-attachments/assets/280bfb90-7342-4103-94ff-942323874111)
+
 
 ### Condición de Ganar
+
 Cuando se elimina al último enemigo y no quedan más "waves" de enemigos
-![ScreenRecording2024-11-08at8 43 23PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/4b6c7919-9053-4166-b4fa-82781fcb725b)
+
+![winGame](https://github.com/user-attachments/assets/70c56259-74dd-4fd7-b6de-a8d4512ac92b)
 
 
 

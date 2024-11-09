@@ -13,6 +13,24 @@ En este ejercicio, desarrollaremos un juego utilizando clases de mánager para r
 
 En este mini-juego, el jugador enfrenta y le dispara a los enemigos. Si el jugador falla y les da a las paredes, los paneles del piso desaparecen según el tipo de golpe de pared: los golpes de la pared lateral eliminan un solo panel, mientras que los golpes de la pared de la esquina eliminan todos los paneles del piso. El objetivo de los jugadores es destruir tantos enemigos como sea posible antes de que se puedan caer hacia el vacío debajo del nivel.
 
+## Stage
+
+### Floors
+![image](https://github.com/user-attachments/assets/ae9f8343-5c10-4763-8462-5881a4492395)
+
+### Walls
+
+#### Corners
+![image](https://github.com/user-attachments/assets/6b473575-4c3e-49b3-8ee3-e288246b8f0d)
+
+#### Side Walls
+![image](https://github.com/user-attachments/assets/80f9caf0-fb82-4cda-8f9d-8e45ba811a41)
+
+
+## Spawners
+![image](https://github.com/user-attachments/assets/c4dfe3c7-e1a7-4bac-8b24-f4fc992acf50)
+
+ 
 ## Enemies Manager Gif
 ![ScreenRecording2024-11-08at10 14 31PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/357127d6-b4f9-4cbc-bb98-87cf3066e67b)
 

@@ -6,6 +6,10 @@ CCOM 4995: Desarrollo de video juegos
 
 # Proyecto Final: Arcade Zombie Shooter
 ## Introduccion
+
+## input system
+<img width="559" alt="Screenshot 2024-12-17 at 4 47 22 PM" src="https://github.com/user-attachments/assets/d6ce149f-cd15-4f21-8cb2-9f10a8a6e7d0" />
+
 ## Assets Importados
 ### AllSky
 ![Screenshot 2024-12-17 171008](https://github.com/user-attachments/assets/e4d66e93-9f8d-4540-b4c4-30f92241fe80)  

@@ -57,8 +57,9 @@ Por ejemplo, en lugares montanosos donde hay una pendiente estrecha aparecera la
 El componente 'rock' esta compuesto por muchas rocas agrandadas y alineadas para crear la base del mapa.
 
 
-
+## Prefabs
 ## Animaciones
+
 ## Efectos de particulas
 ## Sonido
 ## Scripts

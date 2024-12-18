@@ -62,7 +62,45 @@ El componente 'rock' esta compuesto por muchas rocas agrandadas y alineadas para
 
 
 ## Prefabs
+### Zombie 
+Modelo   
+![Screenshot 2024-12-17 181131](https://github.com/user-attachments/assets/af6d7518-3017-46f0-8635-193cff15896b)   
+
+Jerarquia donde incluye particula para simular el efecto de sangre   
+![Screenshot 2024-12-17 181145](https://github.com/user-attachments/assets/022c9397-94ad-4000-adb0-820060f2df0e)   
+
+Inspector de zombie   
+![Screenshot 2024-12-17 181239](https://github.com/user-attachments/assets/eb4de384-6aab-4d59-a0b5-f0d386efe828)   
+![Screenshot 2024-12-17 181337](https://github.com/user-attachments/assets/1f2fe1c2-1189-4b5b-9f59-85daff02975e)   
+
 ## Animaciones
+### Zombie
+Las animaciones dek zombie se descargaron en la aplicacion mixamo
+
+Animacion de correr   
+![ScreenRecording2024-12-17182358-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/22135835-d020-4032-8544-51b16571bb8e)  
+
+Animacion de atacar   
+![ScreenRecording2024-12-17182442-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/eb898cc0-15fd-49d8-930b-909e9ddc753a)   
+
+Animacion de muerte   
+![ScreenRecording2024-12-17182514-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/b1ee4c89-fd32-47c4-88fd-26aa11ee6a96)   
+   
+Controlador de animaciones   
+![Screenshot 2024-12-17 182152](https://github.com/user-attachments/assets/aaa7736e-2e77-4be8-976e-7f86917fcd0a) 
+  Basicamente, se agregan las animaciones importadas a la pestana de animator y en ahi es que se establecen las tranciciones de las animaciones segun los parametros establecidos. En el caso del zombie, implementamos 3 animaciones: Correr, atacar y muerte. Una vez el zombie hace spawn, ya detecta al jugador y por lo tanto se activa la animacion de correr, cuando el jugador esta en rango de ataque la animacion hace una trancicion a la de ataque. EL la animacion del zombie puede cambiar entre esos dos estados continuamente. En el caso de muerte, las animaciones pueden hacer tranciciones hacia el, pero de la animacion de muerte no se puede trancicionar a otra animacion ya que el zombie va a estar muerto.   
+
+  Trancicion de atacar a correr   
+  ![ScreenRecording2024-12-17185545-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/80e74b2b-ff3b-4d01-ac5a-9d15a0fff907)   
+  Trancicion de correr a atacar   
+  ![ScreenRecording2024-12-17185520-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/4013baa4-543f-4253-b83d-f5763df3b3ba)   
+  Trancicion de correr a muerte   
+  ![ScreenRecording2024-12-17185717-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/81abd3a5-802b-41c7-9929-23fea2a627ee)   
+  Trancicion de atacar a muerte   
+  ![ScreenRecording2024-12-17185717-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/4bed94f0-0187-45e0-9ece-5dbace29fb38)
+
+  Como se puede notar en las imagenes de arriba las tranciciones de animacion ocurren cuando se activan ciertos parametros. El parametro de correr siempre esta cierto, por lo tanto el zombie trancisciona de estar corriendo a cualquiera de los otras dos animaciones. Si se activa el parametro de "Atak"(de tipo trigger) pues se trancisiona a la animacion de ataque. Si se ativa el parametro(trigger) de 'Death' entonces se transiciona a la animacion de muerte. 
+
 
 ## Animaciones del jugador
 
@@ -94,7 +132,28 @@ este avatar se les puso a todos los layers secundarios  para que se puedan mezcl
 <img width="785" alt="Screenshot 2024-12-17 at 4 56 27 PM" src="https://github.com/user-attachments/assets/88347071-4869-47d0-88fc-d4f41b1a7979" />
 
 ## Efectos de particulas
+Todos los efectos de particulas fueron creados por nosotros utilizando el Particle System de Unity
+### Sangre
+![ScreenRecording2024-12-17191923-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/ed50f3d6-2de4-403d-a6a8-54569bb31a47)
+### Neblina
+![ScreenRecording2024-12-17192009-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/1b65386d-1edb-41db-907b-eecfa67e9bea)
+### Polvora
+Por alguna razon en el gif aparece blanca pero mas adelante se vera el color real.
+![ScreenRecording2024-12-17192106-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/ca6fadae-c1f4-426f-80c8-5dcd20041757)
+
+
 ## Sonido
+### Efectos de sonido
+Para para manejar los efectos de sonido en el juego se creo un objeto vacio llamado sound manager con su script respectivo. El objeto tiene 3 Audio Sources: 1 para manejar el sonido del disparo y los otros dos para manejar el sonido de los zombies.
+![Screenshot 2024-12-17 193043](https://github.com/user-attachments/assets/06a161cf-cfc3-4b35-b0b8-46bddb13ace6)
+### SoundTrack
+Para manejar la musica del juego se implemento un cubo para establecer de donde se emitira la musica, igual se le asigno 1 solo audio source para la cancion
+![Screenshot 2024-12-17 193657](https://github.com/user-attachments/assets/e96a3897-e8bc-4a52-841b-f1dbd5442206)
+
+### Ejemplo 
+
+https://github.com/user-attachments/assets/d6246740-37da-460c-b7a5-814fe348b9a4
+
 ## Scripts
 
 ### script PlayerController
@@ -142,7 +201,58 @@ El script Inventario gestiona el inventario de armas de un jugador. Permite agre
 este script lo que hace es que rota el tozo del personaje verticalmente si esta en un layer secundario del animtor(esto quiere decir si tiene un arma). tambien jestiona la accion mira hace que la camara haga zoom cuando el personaje invoke a la accion y la imagen la cual es la mira se redusca cuando se apunte.
 
 ![ScreenRecording2024-12-17at6 12 54PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/47c5742a-7bd7-4a61-918e-34666304b524)
+### Script de SoundManager
+SoundManager organiza y controla los efectos de sonido del juego de manera eficiente y accsesible   
+![Screenshot 2024-12-17 202440](https://github.com/user-attachments/assets/cc82b4a3-c2a3-41ea-ab3c-d6d9e612df0e)
+
+### Script de ZombieLife
+En este script se monitorea la vida del zombie y al llegar a 0 se activa la animacion de muerte, se reproduce un sonido, y se eliminan los recursos del zombie despues de la animacion.   
+![Screenshot 2024-12-17 202520](https://github.com/user-attachments/assets/45f3cccc-cbd1-490a-85c4-92078167ce79)
+
+### Script de Sight
+![Screenshot 2024-12-17 202535](https://github.com/user-attachments/assets/5ea2776f-0f44-4dd7-9c88-be4f8510a1ac)   
+Este script implementa la deteccion visual de un enemigo, simulando un campo de vision basado en una distancia y un angulo. Es el mismo script que se implemento en la clase.
+
+### Script de Zombie
+![Screenshot 2024-12-17 202646](https://github.com/user-attachments/assets/18edfd6e-2415-4ce3-8e37-ff0dc0231842)   
+El Zombie script es responsable de agregar y remover un zombie al zombieManager cuando es creado o destruido.
+
+### Script de Main Menu
+![Screenshot 2024-12-17 202722](https://github.com/user-attachments/assets/db0b7f21-be19-4d4d-b6a2-732f048719c1)   
+Este script se encarga en manejar el menu principal del juego, maneja la musica de fondo, el inicio de una nueva partida y la salida de la aplicacion.
+
+### Script de EnemyDrop
+![Screenshot 2024-12-17 202549](https://github.com/user-attachments/assets/5ab1db75-eb2d-4860-a43c-63952299bc83)   
+Controla la probabilidad de que un enemigo suelte un objeto al morir. Al seleccionar un objeto aleatorio de una lista de posibles objetos, instancia el objeto en la posicion actual del enemigo.
+
+### Script de ZombieFSM
+### Script de ContactDamage
+### Script de ZombieManager
+### Script de MedKit
+
 ## UI
+### Menu
+UI canvas:
+![Screenshot 2024-12-17 212126](https://github.com/user-attachments/assets/ee22c535-f2ea-4a14-8fca-09a56a66d0e2)   
+Jerarquia del menu:   
+![Screenshot 2024-12-17 211943](https://github.com/user-attachments/assets/d0f09d04-cae9-44f5-92b5-3cfe89f45906)   
+Inspector del objeto vacio MainMenu que contiene el script de MainMenu que permite gestionar la musica del juego   
+![Screenshot 2024-12-17 211948](https://github.com/user-attachments/assets/255f762f-8d24-4d42-8a35-8dc1adf7f1e3)   
+
+En el inspector de ambos botones hay un componente Button(Onclick) que nos permite pasar el objeto de MainMenu como parametro y asignarle que funcion queremos que ejecute al precionar el boton. En este caso se utilizan las dos funciones que implementamos en el script de main menu.   
+![Screenshot 2024-12-17 212154](https://github.com/user-attachments/assets/9fad9aab-4335-4a31-a416-869b195c4fd0)
+![Screenshot 2024-12-17 212217](https://github.com/user-attachments/assets/a2c1dce8-5e32-4b5c-8e1a-f17e4b11d0bd)
+
 ## Gameplay
 
+
+# IanToDo
+### Script de ZombieFSM
+### Script de ContactDamage
+### Script de ZombieManager
+### Script de MedKit
+### Gameplay
+### Otros scripts importantes que falten por documentar (bomba y spawner)
+### agrega los assets que bajaste y utilizaste del asset store
+### prefabs que utilizaste 
 

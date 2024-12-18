@@ -247,6 +247,7 @@ En el inspector de ambos botones hay un componente Button(Onclick) que nos permi
 
 
 # IanToDo
+### breve intro
 ### Script de ZombieFSM
 ### Script de ContactDamage
 ### Script de ZombieManager
@@ -255,5 +256,6 @@ En el inspector de ambos botones hay un componente Button(Onclick) que nos permi
 ### Otros scripts importantes que falten por documentar (bomba y spawner)
 ### agrega los assets que bajaste y utilizaste del asset store
 ### prefabs que utilizaste 
-###ZIP file del juego
+### UI
+### ZIP file del juego
 

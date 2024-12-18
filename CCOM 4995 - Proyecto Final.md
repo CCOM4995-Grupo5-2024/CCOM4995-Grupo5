@@ -73,7 +73,7 @@ Modelo
 Jerarquía donde incluye partícula para simular el efecto de sangre   
 ![Screenshot 2024-12-17 181145](https://github.com/user-attachments/assets/022c9397-94ad-4000-adb0-820060f2df0e)   
 
-Inspector de zombie   
+Inspector de Z ombie   
 ![Screenshot 2024-12-17 181239](https://github.com/user-attachments/assets/eb4de384-6aab-4d59-a0b5-f0d386efe828)   
 ![Screenshot 2024-12-17 181337](https://github.com/user-attachments/assets/1f2fe1c2-1189-4b5b-9f59-85daff02975e)   
 
@@ -81,18 +81,19 @@ Inspector de zombie
 ### Zombie
 Las animaciones del zombie se descargaron en la aplicación mixamo
 
-Animación de correr   
+Animación de Correr   
 ![ScreenRecording2024-12-17182358-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/22135835-d020-4032-8544-51b16571bb8e)  
 
-Animación de atacar   
+Animación de Atacar   
 ![ScreenRecording2024-12-17182442-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/eb898cc0-15fd-49d8-930b-909e9ddc753a)   
 
-Animación de muerte   
+Animación de Muerte   
 ![ScreenRecording2024-12-17182514-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/b1ee4c89-fd32-47c4-88fd-26aa11ee6a96)   
    
-Controlador de animaciones   
+Controlador de Animaciones   
 ![Screenshot 2024-12-17 182152](https://github.com/user-attachments/assets/aaa7736e-2e77-4be8-976e-7f86917fcd0a) 
-  Básicamente, se agregan las animaciones importadas a la pestaña de animator y en ahí es que se establecen las transiciones de las animaciones según los parametros establecidos. En el caso del zombie, implementamos 3 animaciones: Correr, atacar y muerte. Una vez el zombie hace spawn, ya detecta al jugador y por lo tanto se activa la animacion de correr, cuando el jugador esta en rango de ataque la animación hace una transición a la de ataque. La animación del zombie puede cambiar entre esos dos estados continuamente. En el caso de muerte, las animaciones pueden hacer transiciones hacía él, pero de la animación de muerte no se puede transicionar a otra animación ya que el zombie va a estar muerto.   
+
+Básicamente, se agregan las animaciones importadas a la pestaña de animator y en ahí es que se establecen las transiciones de las animaciones según los parametros establecidos. En el caso del zombie, implementamos 3 animaciones: Correr, atacar y muerte. Una vez el zombie hace spawn, ya detecta al jugador y por lo tanto se activa la animacion de correr, cuando el jugador esta en rango de ataque la animación hace una transición a la de ataque. La animación del zombie puede cambiar entre esos dos estados continuamente. En el caso de muerte, las animaciones pueden hacer transiciones hacía él, pero de la animación de muerte no se puede transicionar a otra animación ya que el zombie va a estar muerto.   
 
   Transición de atacar a correr   
   ![ScreenRecording2024-12-17185545-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/80e74b2b-ff3b-4d01-ac5a-9d15a0fff907)   
@@ -103,32 +104,35 @@ Controlador de animaciones
   Transición de atacar a muerte   
   ![ScreenRecording2024-12-17185717-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/4bed94f0-0187-45e0-9ece-5dbace29fb38)
 
-  Como se puede notar en las imagenes de arriba, las transiciones de animación ocurren cuando se activan ciertos parametros. El parametro de correr siempre es cierto, por lo tanto el zombie transiciona, de estar corriendo, a cualquiera de las otras dos animaciones. Si se activa el parametro de "Atak"(de tipo trigger) pues se transiciona a la animación de ataque. Si se activa el parametro(trigger) de 'Death' entonces se transiciona a la animación de muerte. 
+Como se puede notar en las imagenes de arriba, las transiciones de animación ocurren cuando se activan ciertos parametros. El parametro de correr siempre es cierto, por lo tanto el zombie transiciona, de estar corriendo, a cualquiera de las otras dos animaciones. Si se activa el parametro de "Atak"(de tipo trigger) pues se transiciona a la animación de ataque. Si se activa el parametro(trigger) de 'Death' entonces se transiciona a la animación de muerte. 
 
 
 ## Animaciones del jugador
 
 La animación del jugador se hizo mediante la manipulacion de layers el cual el layer por defecto que esta activo es la animacion sin armas. me diante script se activan y desactivan los layers dependiendo del estado del jugador, es decir que si el jugador tiene un tipo de armas pistol el layer llamado pistol se activa. hizos un layers de armas cuarpo a cuerpo pero decidimos no implementarlo. 
-### layer de jugador sin armas
-<img width="1438" alt="Screenshot 2024-12-17 at 4 51 47 PM" src="https://github.com/user-attachments/assets/c59a990f-8f0e-4c5e-a4a9-b4ad7d211ae2" />
-este layer es el layer por defecto el cual lo utilizamos para las animaciones del movimineto del personaje, incluyendo los saltos.
 
-### contenido del blend tree llamado locomotion
+### Layer de Jugador Sin Armas
+
+<img width="1438" alt="Screenshot 2024-12-17 at 4 51 47 PM" src="https://github.com/user-attachments/assets/c59a990f-8f0e-4c5e-a4a9-b4ad7d211ae2" />
+
+Este layer es el layer por defecto el cual lo utilizamos para las animaciones del movimineto del personaje, incluyendo los saltos.
+
+### Contenido del Blend Tree Llamado Locomotion
 <img width="1330" alt="Screenshot 2024-12-17 at 5 01 52 PM" src="https://github.com/user-attachments/assets/0b8932da-fe2e-4c71-b79f-ecaf50e78f82" />
 
-el layer sin armas funciona praticamente con un blend tree el cual lo que hace es conectar las animaciones dependiendo del valor de 2 variables que en nuestro caso es movimineto horizontal y movimiento vertical el cual se lee del script playerController.
+El layer sin armas funciona praticamente con un blend tree el cual lo que hace es conectar las animaciones dependiendo del valor de 2 variables que en nuestro caso es movimineto horizontal y movimiento vertical el cual se lee del script playerController.
 
-### Avatar de los layers secundarios
+### Avatar de los Layers Secundarios
 
 <img width="1332" alt="Screenshot 2024-12-17 at 5 10 16 PM" src="https://github.com/user-attachments/assets/b71b9357-5344-49e9-aa5d-8206ef5a5fe8" />
 
-este avatar se les puso a todos los layers secundarios  para que se puedan mezclar las animaciones con el layer principal el cual es el layer que jestiona el movimiento. funciona para que solamente se ejecuten las animaciones en las partes seleccionadas. 
+Este avatar se les puso a todos los layers secundarios  para que se puedan mezclar las animaciones con el layer principal el cual es el layer que jestiona el movimiento. funciona para que solamente se ejecuten las animaciones en las partes seleccionadas. 
 
-### layer de jugador con pistola
+### Layer de Jugador con Pistola
 <img width="1434" alt="Screenshot 2024-12-17 at 4 52 39 PM" src="https://github.com/user-attachments/assets/84c132df-19f4-44d5-a47b-7006a181e5fe" />
 
 
-### layer de jugador con rifle
+### Layer de Jugador con Rifle
 <img width="1440" alt="Screenshot 2024-12-17 at 4 54 27 PM" src="https://github.com/user-attachments/assets/5f80b8ef-cc3b-4d3e-9821-b43c86c86f7e" />
 
 ### variables del animator
@@ -147,7 +151,7 @@ Por alguna razon en el gif aparece blanca pero mas adelante se vera el color rea
 
 
 ## Sonido
-### Efectos de sonido
+### Efectos de Sonido
 Para para manejar los efectos de sonido en el juego se creó un objeto vacío llamado sound manager con su script respectivo. El objeto tiene 3 Audio Sources: 1 para manejar el sonido del disparo y los otros dos para manejar el sonido de los zombies.
 ![Screenshot 2024-12-17 193043](https://github.com/user-attachments/assets/06a161cf-cfc3-4b35-b0b8-46bddb13ace6)
 ### SoundTrack
@@ -160,7 +164,7 @@ https://github.com/user-attachments/assets/d6246740-37da-460c-b7a5-814fe348b9a4
 
 ## Scripts
 
-### script PlayerController
+### Script PlayerController
 
 <img width="1000" alt="Screenshot 2024-12-17 at 5 23 31 PM" src="https://github.com/user-attachments/assets/ef424fb7-8567-4f78-babb-c229d3f050ec" />
 <img width="1000" alt="Screenshot 2024-12-17 at 5 25 49 PM" src="https://github.com/user-attachments/assets/597407eb-0766-4818-bcf7-677f2c580ac2" />
@@ -169,9 +173,9 @@ https://github.com/user-attachments/assets/d6246740-37da-460c-b7a5-814fe348b9a4
 <img width="1000" alt="Screenshot 2024-12-17 at 5 29 27 PM" src="https://github.com/user-attachments/assets/dcccf2b7-05c6-400a-a61e-587fe66380f6" />
 <img width="1000" alt="Screenshot 2024-12-17 at 5 30 04 PM" src="https://github.com/user-attachments/assets/a6ab8e73-9685-4eff-977b-210493ceb0e7" />
 
-este script lo que hace es controlar las animaciones del layer principal y tambien hacer el movimiento hacia la direccion que se indica, tambien controla la animacion del salto y tambien hace el moviminto de salto, esa son las cosas principales que hace el script.
+Este script lo que hace es controlar las animaciones del layer principal y tambien hacer el movimiento hacia la direccion que se indica, tambien controla la animacion del salto y tambien hace el moviminto de salto, esa son las cosas principales que hace el script.
 
-### script de shooting
+### Script de Shooting
 
 <img width="1000" alt="Screenshot 2024-12-17 at 5 38 41 PM" src="https://github.com/user-attachments/assets/c64955a9-6fa1-409d-ab54-c697b05f3d97" />
 <img width="1000" alt="Screenshot 2024-12-17 at 5 44 11 PM" src="https://github.com/user-attachments/assets/e862223d-9c66-4216-a58a-0fc50c5317c0" />
@@ -181,7 +185,7 @@ este script lo que hace es controlar las animaciones del layer principal y tambi
 
 El script shooting controla el comportamiento de disparo, tambien que la trayectoria del disparo sea la misma que la trayectoria que va desde el centro de la camara hacia adelante
 
-### script activar arma
+### Script Activar Arma
 
 <img width="991" alt="Screenshot 2024-12-17 at 5 49 50 PM" src="https://github.com/user-attachments/assets/4629909c-31a6-4cc2-8d4b-75c8c7c273a9" />
 
@@ -195,14 +199,14 @@ El script Inventario gestiona el inventario de armas de un jugador. Permite agre
 
 ![ScreenRecording2024-12-17at6 31 26PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/e4be9765-2b84-4487-831f-9a73abf37470)
 
-### script WeaponAimRotation
+### WeaponAimRotation Script
 
 <img width="1000" alt="Screenshot 2024-12-17 at 6 05 28 PM" src="https://github.com/user-attachments/assets/92f04a49-ae2b-4ca7-925c-7bb2ff775752" />
 <img width="1238" alt="Screenshot 2024-12-17 at 6 06 05 PM" src="https://github.com/user-attachments/assets/39427d74-9399-4329-b1cc-37c8a3518f02" />
 <img width="948" alt="Screenshot 2024-12-17 at 6 06 52 PM" src="https://github.com/user-attachments/assets/eb91fbd2-d3fc-4895-8ab3-032178261bc9" />
 
 
-este script lo que hace es que rota el tozo del personaje verticalmente si esta en un layer secundario del animtor(esto quiere decir si tiene un arma). tambien jestiona la accion mira hace que la camara haga zoom cuando el personaje invoke a la accion y la imagen la cual es la mira se redusca cuando se apunte.
+Este script lo que hace es que rota el tozo del personaje verticalmente si esta en un layer secundario del animtor(esto quiere decir si tiene un arma). tambien jestiona la accion mira hace que la camara haga zoom cuando el personaje invoke a la accion y la imagen la cual es la mira se redusca cuando se apunte.
 
 ![ScreenRecording2024-12-17at6 12 54PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/47c5742a-7bd7-4a61-918e-34666304b524)
 ### Script de SoundManager
@@ -229,16 +233,12 @@ Este script se encarga en manejar el menú principal del juego, maneja la músic
 ![Screenshot 2024-12-17 202549](https://github.com/user-attachments/assets/5ab1db75-eb2d-4860-a43c-63952299bc83)   
 Controla la probabilidad de que un enemigo suelte un objeto al morir. Al seleccionar un objeto aleatorio de una lista de posibles objetos, instancia el objeto en la posición actual del enemigo.
 
-### Script de ZombieFSM
-### Script de ContactDamage
-### Script de ZombieManager
-### Script de MedKit
 
 ## UI
 ### Menu
-UI canvas:
+UI Canvas:
 ![Screenshot 2024-12-17 212126](https://github.com/user-attachments/assets/ee22c535-f2ea-4a14-8fca-09a56a66d0e2)   
-Jerarquía del menu:   
+Jerarquía del Menu:   
 ![Screenshot 2024-12-17 211943](https://github.com/user-attachments/assets/d0f09d04-cae9-44f5-92b5-3cfe89f45906)   
 Inspector del objeto vacío MainMenu que contiene el script de MainMenu que permite gestionar la música del juego   
 ![Screenshot 2024-12-17 211948](https://github.com/user-attachments/assets/255f762f-8d24-4d42-8a35-8dc1adf7f1e3)   
@@ -247,10 +247,6 @@ En el inspector de ambos botones hay un componente Button(Onclick) que nos permi
 ![Screenshot 2024-12-17 212154](https://github.com/user-attachments/assets/9fad9aab-4335-4a31-a416-869b195c4fd0)
 ![Screenshot 2024-12-17 212217](https://github.com/user-attachments/assets/a2c1dce8-5e32-4b5c-8e1a-f17e4b11d0bd)
 
-## Gameplay
-
-
-# ToDo ##############
 
 ### Script de ZombieFSM
 
@@ -290,11 +286,11 @@ En el inspector de ambos botones hay un componente Button(Onclick) que nos permi
 
 ## Winning Game
 
-X
+(File too large)
 
 ## Losing Game
 
-X
+(File too large)
 
 
 ### Bomba
@@ -339,9 +335,9 @@ X
 
 
 
-### ZIP file del juego
+### ZIP File del Juego
 
 (Juego es 6 GB< comprimido)
 
-(Videos del video juego todas son muy grandes para GitHub. Incluyendo versiones comprimidas y GIF.
+(Videos del video juego todos son muy grandes para GitHub. Incluyendo versiones comprimidas y GIF.
 

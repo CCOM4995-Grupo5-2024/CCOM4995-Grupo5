@@ -246,7 +246,7 @@ En el inspector de ambos botones hay un componente Button(Onclick) que nos permi
 ## Gameplay
 
 
-# ToDo
+# ToDo ##############
 
 ### Script de ZombieFSM
 
@@ -254,12 +254,82 @@ En el inspector de ambos botones hay un componente Button(Onclick) que nos permi
 
 
 ### Script de ContactDamage
-### Script de ZombieManager
+
+![image](https://github.com/user-attachments/assets/a14b1bd1-5622-4690-9a9c-a33d4911d32f)
+
+
+
+### Script de Spawner
+
+![image](https://github.com/user-attachments/assets/2d549ddf-7e2e-4c34-bad2-c0b5aa60c646)
+
+![image](https://github.com/user-attachments/assets/29f86ad7-2c6f-41fd-bcea-df3793f78e1b)
+
+
+
 ### Script de MedKit
+
+![image](https://github.com/user-attachments/assets/eb187726-bf70-454d-8c42-c6621618522a)
+
+
+## MedKit Prefab
+
+![image](https://github.com/user-attachments/assets/7d8e0381-87c8-4ad7-a932-178ab9893e1f)
+
+## Medkit Asset
+
+![image](https://github.com/user-attachments/assets/a91b4440-11b8-42d6-b0a3-959426851079)
+
+
+
 ### Gameplay
-### Otros scripts importantes que falten por documentar (bomba y spawner)
-### agrega los assets que bajaste y utilizaste del asset store
-### prefabs que utilizaste 
-### UI
+
+## Winning Game
+
+## Losing Game
+
+
+### Bomba
+
+![image](https://github.com/user-attachments/assets/8a232167-34df-4b25-8ca2-3334478ff231)
+
+
+## Bomb Progress Bar
+
+![image](https://github.com/user-attachments/assets/a0f89b0e-b55f-494f-aa14-cb4486783d7a)
+
+![image](https://github.com/user-attachments/assets/39e50a8b-2a02-44f8-97d3-ca3ab705d6ee)
+
+
+## Bomb Asset
+
+![image](https://github.com/user-attachments/assets/4e5a3980-1f5c-4288-a22c-6d1d5a238a78)
+
+
+## Player Stats
+
+![image](https://github.com/user-attachments/assets/51efc093-832b-4b31-9684-ebc7f957d0c5)
+
+![image](https://github.com/user-attachments/assets/31bb6348-3584-4ff3-b71b-f8fe94daf33f)
+
+
+
+## PlayerHUD
+
+![image](https://github.com/user-attachments/assets/1de923a9-a8cf-42dc-8577-47d9de2fc88a)
+
+
+### Health Bar
+
+![image](https://github.com/user-attachments/assets/3a6437e2-8dbc-457f-b5b1-7cb85210960d)
+
+![image](https://github.com/user-attachments/assets/7d64101b-e8e9-4f26-bdaa-4b0110b7dc8c)
+
+![image](https://github.com/user-attachments/assets/1b96d17a-44b8-449c-9408-fc4e8381b94d)
+
+
+
+
+
 ### ZIP file del juego
 

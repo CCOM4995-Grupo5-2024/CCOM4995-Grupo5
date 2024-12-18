@@ -255,4 +255,5 @@ En el inspector de ambos botones hay un componente Button(Onclick) que nos permi
 ### Otros scripts importantes que falten por documentar (bomba y spawner)
 ### agrega los assets que bajaste y utilizaste del asset store
 ### prefabs que utilizaste 
+###ZIP file del juego
 

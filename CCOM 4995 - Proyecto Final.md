@@ -246,9 +246,13 @@ En el inspector de ambos botones hay un componente Button(Onclick) que nos permi
 ## Gameplay
 
 
-# IanToDo
-### breve intro
+# ToDo
+
 ### Script de ZombieFSM
+
+![image](https://github.com/user-attachments/assets/1c9f16f1-7d0b-419e-ab2d-6581a2df4f2a)
+
+
 ### Script de ContactDamage
 ### Script de ZombieManager
 ### Script de MedKit

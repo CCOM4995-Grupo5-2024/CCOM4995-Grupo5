@@ -337,7 +337,9 @@ En el inspector de ambos botones hay un componente Button(Onclick) que nos permi
 
 ### ZIP File del Juego
 
-(Juego es 6 GB< comprimido)
+[FinalProyect.zip](https://github.com/user-attachments/files/18175928/FinalProyect.zip)
 
-(Videos del video juego todos son muy grandes para GitHub. Incluyendo versiones comprimidas y GIF.
+
+
+
 

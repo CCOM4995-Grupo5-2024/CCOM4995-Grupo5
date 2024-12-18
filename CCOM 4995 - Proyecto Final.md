@@ -13,7 +13,7 @@ CCOM 4995: Desarrollo de video juegos
 ## Assets Importados
 ### AllSky
 ![Screenshot 2024-12-17 171008](https://github.com/user-attachments/assets/e4d66e93-9f8d-4540-b4c4-30f92241fe80)  
-Se importo el asset para crear un ambiente que sea de noche.
+Se importó el asset para crear un ambiente que sea de noche.
 ### M1A1 Machine Gun
 ![Screenshot 2024-12-17 171144](https://github.com/user-attachments/assets/51ed7bec-e661-4417-8e4a-211a5dec65c1)  
 Rifle del jugador
@@ -25,7 +25,7 @@ Para crear ambiente
 Sonidos de horror  
 ### Procedural terrain painter
 ![image](https://github.com/user-attachments/assets/d27e83ff-d83d-40ed-9ada-6faa72d02a2a)  
-Fue de utilidad a la hora de crear y modificar el terreno  
+Fue de útilidad a la hora de crear y módificar el terreno  
 ### Three Signs
 ![Screenshot 2024-12-17 171512](https://github.com/user-attachments/assets/709f9e1d-1c47-4483-8146-67869f70b8a5)  
 Para crear ambiente  
@@ -34,7 +34,7 @@ Para crear ambiente
 Agregar watchtower en el mapa  
 ### Unity Terrain - URP Demo scene
 ![Screenshot 2024-12-17 171604](https://github.com/user-attachments/assets/d6cdb3bd-b4d0-479f-ac01-9fa65f08cb10)   
-Funciono como base para crear mapa; se utilizo las texturas para la grama y rocas y arboles para la escena   
+Funcionó como base para crear mapa; se utilizo las texturas para la grama y rocas y árboles para la escena   
 ### Wateland Cabin
 ![Screenshot 2024-12-17 171620](https://github.com/user-attachments/assets/21daf914-70aa-4322-907b-ab40a7565000)  
 La cabina en la escena
@@ -52,11 +52,11 @@ La cabina en la escena
 
 ### Terrain Inspector
 ![Screenshot 2024-12-17 174758](https://github.com/user-attachments/assets/bf381532-035a-49cb-90f6-6fcf90a337b9)   
-Se utilizo terrain painter (elemento que viene del procedural terrain painter) para agregarle capas de texturas al terreno. Las texturas apareceran en el mapa segun la elevacion detectada en el mapa.
-Por ejemplo, en lugares montanosos donde hay una pendiente estrecha aparecera la textura rocosa, pero en lugares planos aparecera la textura de la grama.
+Se utilizó terrain painter (elemento que viene del procedural terrain painter) para agregarle capas de texturas al terreno. Las texturas apareceran en el mapa segun la elevacion detectada en el mapa.
+Por ejemplo, en lugares montañosos donde hay una pendiente estrecha aparecerá la textura rocosa, pero en lugares planos aparecerá la textura de la grama.
 ### Terrain Settings
 ![Screenshot 2024-12-17 175329](https://github.com/user-attachments/assets/d2260fe1-fe31-4344-bf8a-82a14343c962)
-### Jerarquia del terreno
+### Jerarquía del terreno
 ![Screenshot 2024-12-17 173446](https://github.com/user-attachments/assets/bac80b58-3703-460e-a303-c5eba3ccb9af)   
 El componente 'rock' esta compuesto por muchas rocas agrandadas y alineadas para crear la base del mapa.
 
@@ -66,7 +66,7 @@ El componente 'rock' esta compuesto por muchas rocas agrandadas y alineadas para
 Modelo   
 ![Screenshot 2024-12-17 181131](https://github.com/user-attachments/assets/af6d7518-3017-46f0-8635-193cff15896b)   
 
-Jerarquia donde incluye particula para simular el efecto de sangre   
+Jerarquía donde incluye partícula para simular el efecto de sangre   
 ![Screenshot 2024-12-17 181145](https://github.com/user-attachments/assets/022c9397-94ad-4000-adb0-820060f2df0e)   
 
 Inspector de zombie   
@@ -75,36 +75,36 @@ Inspector de zombie
 
 ## Animaciones
 ### Zombie
-Las animaciones dek zombie se descargaron en la aplicacion mixamo
+Las animaciones del zombie se descargaron en la aplicación mixamo
 
-Animacion de correr   
+Animación de correr   
 ![ScreenRecording2024-12-17182358-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/22135835-d020-4032-8544-51b16571bb8e)  
 
-Animacion de atacar   
+Animación de atacar   
 ![ScreenRecording2024-12-17182442-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/eb898cc0-15fd-49d8-930b-909e9ddc753a)   
 
-Animacion de muerte   
+Animación de muerte   
 ![ScreenRecording2024-12-17182514-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/b1ee4c89-fd32-47c4-88fd-26aa11ee6a96)   
    
 Controlador de animaciones   
 ![Screenshot 2024-12-17 182152](https://github.com/user-attachments/assets/aaa7736e-2e77-4be8-976e-7f86917fcd0a) 
-  Basicamente, se agregan las animaciones importadas a la pestana de animator y en ahi es que se establecen las tranciciones de las animaciones segun los parametros establecidos. En el caso del zombie, implementamos 3 animaciones: Correr, atacar y muerte. Una vez el zombie hace spawn, ya detecta al jugador y por lo tanto se activa la animacion de correr, cuando el jugador esta en rango de ataque la animacion hace una trancicion a la de ataque. EL la animacion del zombie puede cambiar entre esos dos estados continuamente. En el caso de muerte, las animaciones pueden hacer tranciciones hacia el, pero de la animacion de muerte no se puede trancicionar a otra animacion ya que el zombie va a estar muerto.   
+  Básicamente, se agregan las animaciones importadas a la pestaña de animator y en ahí es que se establecen las transiciones de las animaciones según los parametros establecidos. En el caso del zombie, implementamos 3 animaciones: Correr, atacar y muerte. Una vez el zombie hace spawn, ya detecta al jugador y por lo tanto se activa la animacion de correr, cuando el jugador esta en rango de ataque la animación hace una transición a la de ataque. La animación del zombie puede cambiar entre esos dos estados continuamente. En el caso de muerte, las animaciones pueden hacer transiciones hacía él, pero de la animación de muerte no se puede transicionar a otra animación ya que el zombie va a estar muerto.   
 
-  Trancicion de atacar a correr   
+  Transición de atacar a correr   
   ![ScreenRecording2024-12-17185545-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/80e74b2b-ff3b-4d01-ac5a-9d15a0fff907)   
-  Trancicion de correr a atacar   
+  Transición de correr a atacar   
   ![ScreenRecording2024-12-17185520-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/4013baa4-543f-4253-b83d-f5763df3b3ba)   
-  Trancicion de correr a muerte   
+  Transición de correr a muerte   
   ![ScreenRecording2024-12-17185717-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/81abd3a5-802b-41c7-9929-23fea2a627ee)   
-  Trancicion de atacar a muerte   
+  Transición de atacar a muerte   
   ![ScreenRecording2024-12-17185717-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/4bed94f0-0187-45e0-9ece-5dbace29fb38)
 
-  Como se puede notar en las imagenes de arriba las tranciciones de animacion ocurren cuando se activan ciertos parametros. El parametro de correr siempre esta cierto, por lo tanto el zombie trancisciona de estar corriendo a cualquiera de los otras dos animaciones. Si se activa el parametro de "Atak"(de tipo trigger) pues se trancisiona a la animacion de ataque. Si se ativa el parametro(trigger) de 'Death' entonces se transiciona a la animacion de muerte. 
+  Como se puede notar en las imagenes de arriba, las transiciones de animación ocurren cuando se activan ciertos parametros. El parametro de correr siempre es cierto, por lo tanto el zombie transiciona, de estar corriendo, a cualquiera de las otras dos animaciones. Si se activa el parametro de "Atak"(de tipo trigger) pues se transiciona a la animación de ataque. Si se activa el parametro(trigger) de 'Death' entonces se transiciona a la animación de muerte. 
 
 
 ## Animaciones del jugador
 
-la animacion del jugador se hizo mediante la manipulacion de layers el cual el layer por defecto que esta activo es la animacion sin armas. me diante script se activan y desactivan los layers dependiendo del estado del jugador, es decir que si el jugador tiene un tipo de armas pistol el layer llamado pistol se activa. hizos un layers de armas cuarpo a cuerpo pero decidimos no implementarlo. 
+La animación del jugador se hizo mediante la manipulacion de layers el cual el layer por defecto que esta activo es la animacion sin armas. me diante script se activan y desactivan los layers dependiendo del estado del jugador, es decir que si el jugador tiene un tipo de armas pistol el layer llamado pistol se activa. hizos un layers de armas cuarpo a cuerpo pero decidimos no implementarlo. 
 ### layer de jugador sin armas
 <img width="1438" alt="Screenshot 2024-12-17 at 4 51 47 PM" src="https://github.com/user-attachments/assets/c59a990f-8f0e-4c5e-a4a9-b4ad7d211ae2" />
 este layer es el layer por defecto el cual lo utilizamos para las animaciones del movimineto del personaje, incluyendo los saltos.
@@ -132,22 +132,22 @@ este avatar se les puso a todos los layers secundarios  para que se puedan mezcl
 <img width="785" alt="Screenshot 2024-12-17 at 4 56 27 PM" src="https://github.com/user-attachments/assets/88347071-4869-47d0-88fc-d4f41b1a7979" />
 
 ## Efectos de particulas
-Todos los efectos de particulas fueron creados por nosotros utilizando el Particle System de Unity
+Todos los efectos de partículas fueron creados por nosotros utilizando el Particle System de Unity
 ### Sangre
 ![ScreenRecording2024-12-17191923-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/ed50f3d6-2de4-403d-a6a8-54569bb31a47)
 ### Neblina
 ![ScreenRecording2024-12-17192009-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/1b65386d-1edb-41db-907b-eecfa67e9bea)
-### Polvora
+### Pólvora
 Por alguna razon en el gif aparece blanca pero mas adelante se vera el color real.
 ![ScreenRecording2024-12-17192106-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/ca6fadae-c1f4-426f-80c8-5dcd20041757)
 
 
 ## Sonido
 ### Efectos de sonido
-Para para manejar los efectos de sonido en el juego se creo un objeto vacio llamado sound manager con su script respectivo. El objeto tiene 3 Audio Sources: 1 para manejar el sonido del disparo y los otros dos para manejar el sonido de los zombies.
+Para para manejar los efectos de sonido en el juego se creó un objeto vacío llamado sound manager con su script respectivo. El objeto tiene 3 Audio Sources: 1 para manejar el sonido del disparo y los otros dos para manejar el sonido de los zombies.
 ![Screenshot 2024-12-17 193043](https://github.com/user-attachments/assets/06a161cf-cfc3-4b35-b0b8-46bddb13ace6)
 ### SoundTrack
-Para manejar la musica del juego se implemento un cubo para establecer de donde se emitira la musica, igual se le asigno 1 solo audio source para la cancion
+Para manejar la música del juego se implementó un cubo para establecer de donde se emitirá la música, igual se le asignó 1 solo audio source para la canción
 ![Screenshot 2024-12-17 193657](https://github.com/user-attachments/assets/e96a3897-e8bc-4a52-841b-f1dbd5442206)
 
 ### Ejemplo 
@@ -206,12 +206,12 @@ SoundManager organiza y controla los efectos de sonido del juego de manera efici
 ![Screenshot 2024-12-17 202440](https://github.com/user-attachments/assets/cc82b4a3-c2a3-41ea-ab3c-d6d9e612df0e)
 
 ### Script de ZombieLife
-En este script se monitorea la vida del zombie y al llegar a 0 se activa la animacion de muerte, se reproduce un sonido, y se eliminan los recursos del zombie despues de la animacion.   
+En este script se monitorea la vida del zombie y al llegar a 0 se activa la animación de muerte, se reproduce un sonido, y se eliminan los recursos del zombie despues de la animacion.   
 ![Screenshot 2024-12-17 202520](https://github.com/user-attachments/assets/45f3cccc-cbd1-490a-85c4-92078167ce79)
 
 ### Script de Sight
 ![Screenshot 2024-12-17 202535](https://github.com/user-attachments/assets/5ea2776f-0f44-4dd7-9c88-be4f8510a1ac)   
-Este script implementa la deteccion visual de un enemigo, simulando un campo de vision basado en una distancia y un angulo. Es el mismo script que se implemento en la clase.
+Este script implementa la detección visual de un enemigo, simulando un campo de visión basado en una distancia y un ángulo. Es el mismo script que se implementó en clase.
 
 ### Script de Zombie
 ![Screenshot 2024-12-17 202646](https://github.com/user-attachments/assets/18edfd6e-2415-4ce3-8e37-ff0dc0231842)   
@@ -219,11 +219,11 @@ El Zombie script es responsable de agregar y remover un zombie al zombieManager 
 
 ### Script de Main Menu
 ![Screenshot 2024-12-17 202722](https://github.com/user-attachments/assets/db0b7f21-be19-4d4d-b6a2-732f048719c1)   
-Este script se encarga en manejar el menu principal del juego, maneja la musica de fondo, el inicio de una nueva partida y la salida de la aplicacion.
+Este script se encarga en manejar el menú principal del juego, maneja la música de fondo, el inicio de una nueva partida y la salida de la aplicación.
 
 ### Script de EnemyDrop
 ![Screenshot 2024-12-17 202549](https://github.com/user-attachments/assets/5ab1db75-eb2d-4860-a43c-63952299bc83)   
-Controla la probabilidad de que un enemigo suelte un objeto al morir. Al seleccionar un objeto aleatorio de una lista de posibles objetos, instancia el objeto en la posicion actual del enemigo.
+Controla la probabilidad de que un enemigo suelte un objeto al morir. Al seleccionar un objeto aleatorio de una lista de posibles objetos, instancia el objeto en la posición actual del enemigo.
 
 ### Script de ZombieFSM
 ### Script de ContactDamage
@@ -234,12 +234,12 @@ Controla la probabilidad de que un enemigo suelte un objeto al morir. Al selecci
 ### Menu
 UI canvas:
 ![Screenshot 2024-12-17 212126](https://github.com/user-attachments/assets/ee22c535-f2ea-4a14-8fca-09a56a66d0e2)   
-Jerarquia del menu:   
+Jerarquía del menu:   
 ![Screenshot 2024-12-17 211943](https://github.com/user-attachments/assets/d0f09d04-cae9-44f5-92b5-3cfe89f45906)   
-Inspector del objeto vacio MainMenu que contiene el script de MainMenu que permite gestionar la musica del juego   
+Inspector del objeto vacío MainMenu que contiene el script de MainMenu que permite gestionar la música del juego   
 ![Screenshot 2024-12-17 211948](https://github.com/user-attachments/assets/255f762f-8d24-4d42-8a35-8dc1adf7f1e3)   
 
-En el inspector de ambos botones hay un componente Button(Onclick) que nos permite pasar el objeto de MainMenu como parametro y asignarle que funcion queremos que ejecute al precionar el boton. En este caso se utilizan las dos funciones que implementamos en el script de main menu.   
+En el inspector de ambos botones hay un componente Button(Onclick) que nos permite pasar el objeto de MainMenu como parametro y asignarle que función queremos que ejecute al precionar el botón. En este caso se utilizan las dos funciones que implementamos en el script de MainMenu.   
 ![Screenshot 2024-12-17 212154](https://github.com/user-attachments/assets/9fad9aab-4335-4a31-a416-869b195c4fd0)
 ![Screenshot 2024-12-17 212217](https://github.com/user-attachments/assets/a2c1dce8-5e32-4b5c-8e1a-f17e4b11d0bd)
 

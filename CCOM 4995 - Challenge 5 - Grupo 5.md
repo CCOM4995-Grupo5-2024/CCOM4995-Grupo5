@@ -22,6 +22,16 @@ En este ejercicio, practicamos cómo usar el nuevo Sistema de Entrada de Unity p
 | Fast horizontal movement   | Shift + A/D keys, gamepad left stick (press)   |
 | Fast vertical movement     | Shift + W/S keys, gamepad left stick (press)   |
 
+# Creación de InputActions
+En la carpeta de assets se creo un Input actions
+
+<img width="246" alt="Screenshot 2024-12-17 at 10 19 13 PM" src="https://github.com/user-attachments/assets/f498a77d-fae2-4826-9445-57a85227f84a" />
+
+## Player inspector
+Luego de crear el InputActions, en el inspector del jugador se agrego un componente PlayerInput que nos permite agregar el input actions que creamos. De esta manera las acciones creadas le aplicarán al jugador.
+
+<img width="335" alt="Screenshot 2024-12-17 at 10 13 43 PM" src="https://github.com/user-attachments/assets/2f46fba7-f725-4be4-aa0d-8889340192a5" />
+
 # Acciones Creadas
 
 <img width="875" alt="Screenshot 2024-10-14 at 12 01 58 AM" src="https://github.com/user-attachments/assets/45b99448-e824-4223-9623-07ec8234489a">

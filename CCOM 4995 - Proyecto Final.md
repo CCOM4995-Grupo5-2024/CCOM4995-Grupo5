@@ -4,8 +4,12 @@ Ian M. Perez Lopez
 Grupo 5  
 CCOM 4995: Desarrollo de video juegos
 
-# Proyecto Final: Arcade Zombie Shooter
+# Proyecto Final: The End May Very Well Be Near
+
 ## Introduccion
+
+In the heart of an isolated and sprawling European nation, chaos erupts when a mysterious accident near a top-secret weapons facility sparks a devastating zombie outbreak. As the infection spreads with horrifying speed, the government scrambles to contain it, dispatching an elite special forces unit on a desperate mission to detonate a powerful bomb that could obliterate the source. When the entire team falls to the relentless hordes, the mission's weight falls solely on the shoulders of its lone surviving soldier, a battle-hardened operative determined to see it through. Armed with an arsenal scavenged from the facility, he must endure waves of ever-growing, frenzied zombies while racing against time to arm the bomb. Every second is a brutal fight for survival, as he grapples with his own limits in a bid to stop the infection from consuming the nation—and perhaps, the world.
+
 
 ## input system
 <img width="559" alt="Screenshot 2024-12-17 at 4 47 22 PM" src="https://github.com/user-attachments/assets/d6ce149f-cd15-4f21-8cb2-9f10a8a6e7d0" />
@@ -286,7 +290,11 @@ En el inspector de ambos botones hay un componente Button(Onclick) que nos permi
 
 ## Winning Game
 
+X
+
 ## Losing Game
+
+X
 
 
 ### Bomba
@@ -332,4 +340,8 @@ En el inspector de ambos botones hay un componente Button(Onclick) que nos permi
 
 
 ### ZIP file del juego
+
+(Juego es 6 GB< comprimido)
+
+(Videos del video juego todas son muy grandes para GitHub. Incluyendo versiones comprimidas y GIF.
 

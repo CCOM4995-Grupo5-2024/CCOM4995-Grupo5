@@ -210,20 +210,20 @@ Este script lo que hace es que rota el tozo del personaje verticalmente si esta 
 
 ![ScreenRecording2024-12-17at6 12 54PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/47c5742a-7bd7-4a61-918e-34666304b524)
 ### Script de SoundManager
-SoundManager organiza y controla los efectos de sonido del juego de manera eficiente y accsesible   
+SoundManager organiza y controla los efectos de sonido del juego de manera eficiente y accsesible. Script es agregado a un componente de un objeto vacio en la jerarquia de la escena.   
 ![Screenshot 2024-12-17 202440](https://github.com/user-attachments/assets/cc82b4a3-c2a3-41ea-ab3c-d6d9e612df0e)
 
 ### Script de ZombieLife
-En este script se monitorea la vida del zombie y al llegar a 0 se activa la animación de muerte, se reproduce un sonido, y se eliminan los recursos del zombie despues de la animacion.   
+En este script se monitorea la vida del zombie y al llegar a 0 se activa la animación de muerte, se reproduce un sonido, y se eliminan los recursos del zombie despues de la animacion. Componente del prefab del zombie
 ![Screenshot 2024-12-17 202520](https://github.com/user-attachments/assets/45f3cccc-cbd1-490a-85c4-92078167ce79)
 
 ### Script de Sight
 ![Screenshot 2024-12-17 202535](https://github.com/user-attachments/assets/5ea2776f-0f44-4dd7-9c88-be4f8510a1ac)   
-Este script implementa la detección visual de un enemigo, simulando un campo de visión basado en una distancia y un ángulo. Es el mismo script que se implementó en clase.
+Este script implementa la detección visual de un enemigo, simulando un campo de visión basado en una distancia y un ángulo. Es el mismo script que se implementó en clase. Colocado en el componente AI del zombie.
 
 ### Script de Zombie
 ![Screenshot 2024-12-17 202646](https://github.com/user-attachments/assets/18edfd6e-2415-4ce3-8e37-ff0dc0231842)   
-El Zombie script es responsable de agregar y remover un zombie al zombieManager cuando es creado o destruido.
+El Zombie script es responsable de agregar y remover un zombie al zombieManager cuando es creado o destruido. Componente
 
 ### Script de Main Menu
 ![Screenshot 2024-12-17 202722](https://github.com/user-attachments/assets/db0b7f21-be19-4d4d-b6a2-732f048719c1)   
@@ -231,7 +231,7 @@ Este script se encarga en manejar el menú principal del juego, maneja la músic
 
 ### Script de EnemyDrop
 ![Screenshot 2024-12-17 202549](https://github.com/user-attachments/assets/5ab1db75-eb2d-4860-a43c-63952299bc83)   
-Controla la probabilidad de que un enemigo suelte un objeto al morir. Al seleccionar un objeto aleatorio de una lista de posibles objetos, instancia el objeto en la posición actual del enemigo.
+Controla la probabilidad de que un enemigo suelte un objeto al morir. Al seleccionar un objeto aleatorio de una lista de posibles objetos, instancia el objeto en la posición actual del enemigo. Scipt es parte de componente de zombie
 
 
 ## UI
@@ -286,11 +286,14 @@ En el inspector de ambos botones hay un componente Button(Onclick) que nos permi
 
 ## Winning Game
 
-(File too large)
+https://github.com/user-attachments/assets/89b5c406-727f-4c35-b2a3-401223e04418
+
 
 ## Losing Game
 
-(File too large)
+
+https://github.com/user-attachments/assets/a412be4f-4469-4825-9dd8-2ae6ee5317ed
+
 
 
 ### Bomba

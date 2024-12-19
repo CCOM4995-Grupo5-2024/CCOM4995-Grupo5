@@ -107,4 +107,4 @@ El “script” en C# llamado “playerControls” controla el movimiento, la ro
 
 
 ### “Script” en Uso
-![ScreenRecording2024-10-13at11 18 01PM-ezgif com-optimize](https://github.com/user-attachments/assets/7cc57ca9-37d5-42bf-a714-1dbc6b96e00f
+![ScreenRecording2024-10-13at11 18 01PM-ezgif com-optimize](https://github.com/user-attachments/assets/7cc57ca9-37d5-42bf-a714-1dbc6b96e00f)

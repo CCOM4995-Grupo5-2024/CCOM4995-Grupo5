@@ -114,13 +114,24 @@ Controlador de Animaciones
 Básicamente, se agregan las animaciones importadas a la pestaña de “animator” y ahí es que se establecen las transiciones de las animaciones según los parámetros establecidos. En el caso del zombi, implementamos 3 animaciones: Correr, atacar y muerte. Una vez el zombi hace “spawn”, ya detecta al jugador y por lo tanto se activa la animación de correr, cuando el jugador está en rango de ataque la animación hace una transición a la de ataque. La animación del zombi puede cambiar entre esos dos estados continuamente. En el caso de muerte, las animaciones pueden hacer transiciones hacía él, pero de la animación de muerte no se puede transicionar a otra animación ya que el zombi va a estar muerto.   
 
   Transición de atacar a correr: 
+  
   ![ScreenRecording2024-12-17185545-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/80e74b2b-ff3b-4d01-ac5a-9d15a0fff907)   
+
+  
   Transición de correr a atacar:   
+  
   ![ScreenRecording2024-12-17185520-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/4013baa4-543f-4253-b83d-f5763df3b3ba)   
+
+  
   Transición de correr a muerte:   
+  
   ![ScreenRecording2024-12-17185717-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/81abd3a5-802b-41c7-9929-23fea2a627ee)   
+
+  
   Transición de atacar a muerte:  
+  
   ![ScreenRecording2024-12-17185717-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/4bed94f0-0187-45e0-9ece-5dbace29fb38)
+  
 
 Como se puede notar en las imágenes de arriba, las transiciones de animación ocurren cuando se activan ciertos parámetros. El parámetro de correr siempre es cierto, por lo tanto, el zombi transiciona, de estar corriendo, a cualquiera de las otras dos animaciones. Si se activa el parámetro de "Atack"(de tipo “trigger”) pues se transiciona a la animación de ataque. Si se activa el parámetro (“trigger”) de 'Death' entonces se transiciona a la animación de muerte. 
 

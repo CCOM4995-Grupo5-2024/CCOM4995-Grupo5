@@ -23,12 +23,12 @@ En este ejercicio, practicamos cómo usar el nuevo Sistema de Entrada de Unity p
 | Fast vertical movement     | Shift + W/S keys, gamepad left stick (press)   |
 
 # Creación de InputActions
-En la carpeta de assets se creo un Input actions
+En la carpeta de assets se creó un Input actions
 
 <img width="246" alt="Screenshot 2024-12-17 at 10 19 13 PM" src="https://github.com/user-attachments/assets/f498a77d-fae2-4826-9445-57a85227f84a" />
 
 ## Player inspector
-Luego de crear el InputActions, en el inspector del jugador se agrego un componente PlayerInput que nos permite agregar el input actions que creamos. De esta manera las acciones creadas le aplicarán al jugador.
+Luego de crear el InputActions, en el inspector del jugador se agregó un componente PlayerInput que nos permite agregar el input actions que creamos. De esta manera las acciones creadas le aplicarán al jugador.
 
 <img width="335" alt="Screenshot 2024-12-17 at 10 13 43 PM" src="https://github.com/user-attachments/assets/2f46fba7-f725-4be4-aa0d-8889340192a5" />
 
@@ -50,13 +50,13 @@ Se han definido varias acciones para controlar al jugador en Unity. Al presionar
 ## Visual Graph
 
 ### Horizontal Move
-Se usa un nodo, 'On Input System Event Float' asignado a HorizontalMove, del nuevo input system que lee el valor en x cuando se oprimen las llaves A y D. Este nodo devuelve el valor en el eje x. Se inicializa la variable movementValue con el output del nodo inicial 'On Input System Event Float'. movementValue se multiplica por la variable speed. El resultado se ingresa en el un nodo nuevo que traslada el la posicion del valor x del personaje. Permite al jugador moverse de hacia los lados
+Se usa un nodo, 'On Input System Event Float' asignado a HorizontalMove, del nuevo input system que lee el valor en x cuando se oprimen las llaves A y D. Este nodo devuelve el valor en el eje x. Se inicializa la variable movementValue con el output del nodo inicial 'On Input System Event Float'. movementValue se multiplica por la variable speed. El resultado se ingresa en el un nodo nuevo que traslada el la posición del valor x del personaje. Permite al jugador moverse de hacia los lados
 
 ### Vertical Move 
-Basicamente es la misma serie de nodos que en Horizontal Move pero el resultado de la multiplicación es ingresado en la posición del valor z en el nodo que traslada al personaje. Y el nodo inicial es 'On Input System Event Float' asignado a VerticalMove. Permite al jugador moverse hacia alfrente y atrás.
+Básicamente es la misma serie de nodos que en Horizontal Move pero el resultado de la multiplicación es ingresado en la posición del valor z en el nodo que traslada al personaje. Y el nodo inicial es 'On Input System Event Float' asignado a VerticalMove. Permite al jugador moverse hacia alfrente y atrás.
 
 ### Run
-Se usa un nodo, 'On Input System Event Button' asignado a Run, del nuevo input system que detecta cuando se oprime la llave: Shift. Si se oprime shift, se inicializa variable isRunning que detecta si el personaje corre. Luego de un nodo condicional, se asigna el valor de runSpeed a la variable aumentoVelocidad mediante un nodo de tipo Set Variable. Luedo se inicializa la variable currentSpeed con el resultado de la multiplicación entre speed y aumentoVelocidad. currenApeed es ingresado al nodo que traslada la posición al valor z del personaje. Permite correr
+Se usa un nodo, 'On Input System Event Button' asignado a Run, del nuevo input system que detecta cuando se oprime la llave: Shift. Si se oprime shift, se inicializa variable isRunning que detecta si el personaje corre. Luego de un nodo condicional, se asigna el valor de runSpeed a la variable aumentoVelocidad mediante un nodo de tipo Set Variable. Luego se inicializa la variable currentSpeed con el resultado de la multiplicación entre speed y aumentoVelocidad. currenApeed es ingresado al nodo que traslada la posición al valor z del personaje. Permite correr.
 
 ### Look
 Se usa un nodo, 'On Input System Event Vector2' asignado a Look que lee el valor de Vector2. Se usa un nodo para obtener el valor de x en el Vector2. Ese valor es multiplicado por la variable rotationSpeed y ese resultado es asignado a la variable lookValue. El valor de look value es assignado a la posicón y del nodo 'Transform Rotate'. Permite rotar la pantalla con el movimiento del mouse.
